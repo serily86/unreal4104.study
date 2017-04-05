@@ -1,622 +1,918 @@
-﻿[2017.03.20-08.03.14:166][  0]Log file open, 03/20/17 17:03:14
-[2017.03.20-08.03.14:166][  0]LogInit:Display: Running engine for game: PaperNinja
-[2017.03.20-08.03.14:166][  0]LogPlatformFile: Not using cached read wrapper
-[2017.03.20-08.03.14:167][  0]LogInit:Display: RandInit(604010640) SRandInit(604010641).
-[2017.03.20-08.03.14:167][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2017.03.20-08.03.14:167][  0]LogStats: Stats thread started at 0.107689
-[2017.03.20-08.03.14:167][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2017.03.20-08.03.14:167][  0]LogInit: API Version: 2758231
-[2017.03.20-08.03.14:167][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
-[2017.03.20-08.03.14:167][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2017.03.20-08.03.14:167][  0]LogInit: Build Configuration: Development
-[2017.03.20-08.03.14:167][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2017.03.20-08.03.14:167][  0]LogInit: Command line: 
-[2017.03.20-08.03.14:167][  0]LogInit: Base directory: D:/Program Files/Epic Games/4.10/Engine/Binaries/Win64/
-[2017.03.20-08.03.14:167][  0]LogInit: Rocket: 1
-[2017.03.20-08.03.14:237][  0]LogInit: Using libcurl 7.41.0
-[2017.03.20-08.03.14:237][  0]LogInit:  - built for x86_64-pc-win32
-[2017.03.20-08.03.14:237][  0]LogInit:  - supports SSL with WinSSL
-[2017.03.20-08.03.14:237][  0]LogInit:  - other features:
-[2017.03.20-08.03.14:237][  0]LogInit:      CURL_VERSION_SSL
-[2017.03.20-08.03.14:237][  0]LogInit:      CURL_VERSION_IPV6
-[2017.03.20-08.03.14:237][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2017.03.20-08.03.14:237][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2017.03.20-08.03.14:237][  0]LogInit:      CURL_VERSION_IDN
-[2017.03.20-08.03.14:237][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2017.03.20-08.03.14:237][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2017.03.20-08.03.14:237][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2017.03.20-08.03.14:237][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2017.03.20-08.03.14:237][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2017.03.20-08.03.14:246][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2017.03.20-08.03.14:251][  0]LogInit: Object subsystem initialized
-[2017.03.20-08.03.14:252][  0]LogInit: Selected Device Profile: [Windows]
-[2017.03.20-08.03.14:252][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.03.20-08.03.14:265][  0]LogInit: Computer: DESKTOP-VK2JK2P
-[2017.03.20-08.03.14:265][  0]LogInit: User: BoyeongYeon
-[2017.03.20-08.03.14:265][  0]LogInit: CPU Page size=4096, Cores=4
-[2017.03.20-08.03.14:265][  0]LogInit: High frequency timer resolution =2.531252 MHz
-[2017.03.20-08.03.14:265][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2017.03.20-08.03.14:265][  0]LogMemory: Platform Memory Stats for Windows
-[2017.03.20-08.03.14:265][  0]LogMemory: Process Physical Memory: 57.16 MB used, 57.16 MB peak
-[2017.03.20-08.03.14:265][  0]LogMemory: Process Virtual Memory: 56.80 MB used, 56.80 MB peak
-[2017.03.20-08.03.14:265][  0]LogMemory: Physical Memory: 4371.42 MB used, 16268.49 MB total
-[2017.03.20-08.03.14:265][  0]LogMemory: Virtual Memory: 383.86 MB used, 134217728.00 MB total
-[2017.03.20-08.03.14:334][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
-[2017.03.20-08.03.14:370][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
-Localization Resource: (D:/Program Files/Epic Games/4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
-Localization Resource: (D:/Program Files/Epic Games/4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
-[2017.03.20-08.03.14:370][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
-Localization Resource: (D:/Program Files/Epic Games/4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
+﻿[2017.04.05-05.30.13:090][  0]Log file open, 04/05/17 14:30:13
+[2017.04.05-05.30.13:090][  0]LogInit:Display: Running engine for game: PaperNinja
+[2017.04.05-05.30.13:090][  0]LogPlatformFile: Not using cached read wrapper
+[2017.04.05-05.30.13:090][  0]LogInit:Display: RandInit(-2039035099) SRandInit(-2039035098).
+[2017.04.05-05.30.13:090][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2017.04.05-05.30.13:090][  0]LogStats: Stats thread started at 0.079464
+[2017.04.05-05.30.13:090][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2017.04.05-05.30.13:090][  0]LogInit: API Version: 2758231
+[2017.04.05-05.30.13:090][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
+[2017.04.05-05.30.13:090][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2017.04.05-05.30.13:090][  0]LogInit: Build Configuration: Development
+[2017.04.05-05.30.13:090][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2017.04.05-05.30.13:090][  0]LogInit: Command line: -EpicPortal 
+[2017.04.05-05.30.13:090][  0]LogInit: Base directory: F:/Program Files (x86)/UE_4.10/Engine/Binaries/Win64/
+[2017.04.05-05.30.13:090][  0]LogInit: Rocket: 1
+[2017.04.05-05.30.13:113][  0]LogInit: Using libcurl 7.41.0
+[2017.04.05-05.30.13:113][  0]LogInit:  - built for x86_64-pc-win32
+[2017.04.05-05.30.13:113][  0]LogInit:  - supports SSL with WinSSL
+[2017.04.05-05.30.13:113][  0]LogInit:  - other features:
+[2017.04.05-05.30.13:113][  0]LogInit:      CURL_VERSION_SSL
+[2017.04.05-05.30.13:113][  0]LogInit:      CURL_VERSION_IPV6
+[2017.04.05-05.30.13:113][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2017.04.05-05.30.13:113][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2017.04.05-05.30.13:113][  0]LogInit:      CURL_VERSION_IDN
+[2017.04.05-05.30.13:113][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2017.04.05-05.30.13:113][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2017.04.05-05.30.13:113][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2017.04.05-05.30.13:113][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2017.04.05-05.30.13:113][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2017.04.05-05.30.13:133][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2017.04.05-05.30.13:139][  0]LogInit: Object subsystem initialized
+[2017.04.05-05.30.13:140][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.05-05.30.13:140][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.05-05.30.13:154][  0]LogInit: Computer: NAVER-PC
+[2017.04.05-05.30.13:154][  0]LogInit: User: Naver
+[2017.04.05-05.30.13:154][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.04.05-05.30.13:154][  0]LogInit: High frequency timer resolution =3.117812 MHz
+[2017.04.05-05.30.13:154][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.04.05-05.30.13:154][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.05-05.30.13:154][  0]LogMemory: Process Physical Memory: 57.14 MB used, 57.14 MB peak
+[2017.04.05-05.30.13:154][  0]LogMemory: Process Virtual Memory: 59.42 MB used, 59.42 MB peak
+[2017.04.05-05.30.13:154][  0]LogMemory: Physical Memory: 4046.97 MB used, 32708.51 MB total
+[2017.04.05-05.30.13:154][  0]LogMemory: Virtual Memory: 355.83 MB used, 8388608.00 MB total
+[2017.04.05-05.30.13:299][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
+[2017.04.05-05.30.13:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
+Localization Resource: (F:/Program Files (x86)/UE_4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
+Localization Resource: (F:/Program Files (x86)/UE_4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+[2017.04.05-05.30.13:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
+Localization Resource: (F:/Program Files (x86)/UE_4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
  )
-Localization Resource: (D:/Program Files/Epic Games/4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
+Localization Resource: (F:/Program Files (x86)/UE_4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
  )
-[2017.03.20-08.03.14:370][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
-Localization Resource: (D:/Program Files/Epic Games/4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
-Localization Resource: (D:/Program Files/Epic Games/4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
-[2017.03.20-08.03.14:566][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970M      (Feature Level 11_0)
-[2017.03.20-08.03.14:566][  0]LogD3D11RHI: Adapter has 2991MB of dedicated video memory, 0MB of dedicated system memory, and 8134MB of shared system memory, 1 output[s]
-[2017.03.20-08.03.14:575][  0]LogD3D11RHI: Found D3D11 adapter 1: Intel(R) HD Graphics 530 (Feature Level 11_0)
-[2017.03.20-08.03.14:575][  0]LogD3D11RHI: Adapter has 128MB of dedicated video memory, 0MB of dedicated system memory, and 8134MB of shared system memory, 0 output[s]
-[2017.03.20-08.03.14:577][  0]LogD3D11RHI: Found D3D11 adapter 2: Microsoft Basic Render Driver (Feature Level 11_0)
-[2017.03.20-08.03.14:577][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8134MB of shared system memory, 0 output[s]
-[2017.03.20-08.03.14:577][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2017.03.20-08.03.14:581][  0]LogD3D11RHI: !Direct3DDevice
-[2017.03.20-08.03.14:582][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.03.20-08.03.14:603][  0]LogD3D11RHI: Async texture creation enabled
-[2017.03.20-08.03.14:616][  0]LogShaderCompilers: Guid format shader working directory is -5 characters bigger than the processId version (../../../../../../Documents/Unreal Projects/PaperNinja/Intermediate/Shaders/WorkingDirectory/2380/).
-[2017.03.20-08.03.14:616][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/BOYEON~1/AppData/Local/Temp/UnrealShaderWorkingDir/803AE8864DD664386DA20598CCBCE540/'.
-[2017.03.20-08.03.14:616][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.03.20-08.03.15:544][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.03.20-08.03.15:548][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.03.20-08.03.15:553][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.03.20-08.03.15:559][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.03.20-08.03.15:566][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.03.20-08.03.15:571][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.03.20-08.03.15:576][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.03.20-08.03.15:580][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.03.20-08.03.15:583][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.03.20-08.03.15:586][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.03.20-08.03.15:590][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.03.20-08.03.15:599][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.03.20-08.03.15:599][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.03.20-08.03.15:601][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.03.20-08.03.15:621][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.03.20-08.03.15:623][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.03.20-08.03.15:626][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.03.20-08.03.15:629][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.03.20-08.03.15:629][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.03.20-08.03.15:724][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.03.20-08.03.15:762][  0]LogDerivedDataCache: Loaded boot cache 0.04s 41MB C:/Users/BoyeongYeon/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2017.03.20-08.03.15:762][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/BoyeongYeon/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2017.03.20-08.03.15:762][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Documents/Unreal Projects/PaperNinja/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.03.20-08.03.15:762][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.03.20-08.03.15:762][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Documents/Unreal Projects/PaperNinja/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.03.20-08.03.15:762][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.03.20-08.03.15:815][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.03.20-08.03.15:828][  0]LogDerivedDataCache: Using Local data cache path C:/Users/BoyeongYeon/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.03.20-08.03.16:010][  0]LogInit: Selected Device Profile: [Windows]
-[2017.03.20-08.03.16:013][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2017.03.20-08.03.16:132][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2017.03.20-08.03.16:132][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.03.20-08.03.16:448][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.03.20-08.03.17:304][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.03.20-08.03.17:421][  0]LogAssetRegistry: FAssetRegistry took 0.0106 seconds to start up
-[2017.03.20-08.03.17:593][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.03.20-08.03.17:596][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.03.20-08.03.17:609][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.03.20-08.03.17:625][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.03.20-08.03.17:898][  0]LogObj: 28633 objects as part of root set at end of initial load.
-[2017.03.20-08.03.17:898][  0]LogUObjectAllocator: 6099752 out of 0 bytes used by permanent object pool.
-[2017.03.20-08.03.17:957][  0]LogEngine: Initializing Engine...
-[2017.03.20-08.03.17:964][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2017.03.20-08.03.17:965][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2017.03.20-08.03.18:073][  0]LogAIModule: Creating AISystem for world NewWorld
-[2017.03.20-08.03.18:090][  0]LogInit: XAudio2 using 'SAMSUNG(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.20-08.03.18:120][  0]LogInit: FAudioDevice initialized.
-[2017.03.20-08.03.18:143][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/BoyeongYeon/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2017.03.20-08.03.18:145][  0]LogInit: Texture streaming: Enabled
-[2017.03.20-08.03.18:151][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2017.03.20-08.03.18:151][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2017.03.20-08.03.18:151][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 44018eb544c401a9295909b2813e31ec|7260c19b5aeb45edafca6b45e10b0fc9|a8720809-fe1d-49d8-be2a-1d556cbea416
-[2017.03.20-08.03.18:151][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2017.03.20-08.03.18:162][  0]LogInit: Transaction tracking system initialized
-[2017.03.20-08.03.18:192][  0]BlueprintLog: New page: 에디터 로드
-[2017.03.20-08.03.18:275][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
-[2017.03.20-08.03.18:368][  0]LogConsoleResponse:Display: 
-[2017.03.20-08.03.18:536][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2017.03.20-08.03.18:596][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/Unreal Projects/PaperNinja/Content/' took 0.04s
-[2017.03.20-08.03.18:596][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.03.20-08.03.18:596][  0]Cmd: MAP LOAD FILE="../../../../../../Documents/Unreal Projects/PaperNinja/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.03.20-08.03.18:604][  0]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.03.18:607][  0]MapCheck: New page: 맵 체크
-[2017.03.20-08.03.18:607][  0]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.03.18:618][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E34CE9D260
-[2017.03.20-08.03.20:495][  0]LogAIModule: Creating AISystem for world Minimal_Default
-[2017.03.20-08.03.20:714][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.03.20-08.03.20:737][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.03.20-08.03.20:823][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 84.956ms.
-[2017.03.20-08.03.20:823][  0]LogFileHelpers: Loading map 'Minimal_Default' took 2.226
-[2017.03.20-08.03.21:323][  0]LogCollectionManager: Loaded 0 collections in 0.002770 seconds
-[2017.03.20-08.03.21:507][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/Unreal Projects/PaperNinja/Saved/Collections/' took 0.01s
-[2017.03.20-08.03.21:507][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/Unreal Projects/PaperNinja/Content/Developers/BoyeongYeon/Collections/' took 0.01s
-[2017.03.20-08.03.21:507][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/Unreal Projects/PaperNinja/Content/Collections/' took 0.01s
-[2017.03.20-08.03.21:507][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2017.03.20-08.03.21:515][  0]LogContentBrowser: Native class hierarchy populated in 0.0072 seconds. Added 1893 classes and 338 folders.
-[2017.03.20-08.03.21:592][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2017.03.20-08.03.24:313][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2017.03.20-08.03.24:589][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
-[2017.03.20-08.03.24:826][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0012 seconds. Added 1 classes and 3 folders.
-[2017.03.20-08.03.27:376][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.03.20-08.03.27:650][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
-[2017.03.20-08.03.27:693][  0]LogLoad: Full Startup: 14.21 seconds (BP compile: 0.04 seconds)
-[2017.03.20-08.03.27:715][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.03.20-08.03.27:724][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2017.03.20-08.03.28:249][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.03.20-08.03.29:275][  0]LogRenderer: Reallocating scene render targets to support 864x432 (Frame:2).
-[2017.03.20-08.03.30:027][  3]LogAssetRegistry: Asset discovery search completed in 12.6157 seconds
-[2017.03.20-08.03.30:027][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2017.03.20-08.03.30:027][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000017 seconds (updated 0 objects)
-[2017.03.20-08.04.17:426][528]LogStaticMesh: SM_Shuriken 스태틱 메시 빌드중...
-[2017.03.20-08.04.17:485][528]LogStaticMesh: Built static mesh [0.059631.2s] /Game/Props/SM_Shuriken.SM_Shuriken
-[2017.03.20-08.04.17:492][528]LogMaterial: Missing cached shader map for material M_Shuriken, compiling. 
-[2017.03.20-08.04.17:565][528]LogAIModule: Creating AISystem for world Test_Actor_Movement
-[2017.03.20-08.04.17:631][528]Cmd: MAP LOAD FILE="../../../../../../Documents/Unreal Projects/PaperNinja/Content/Map/Test/Test_Actor_Movement.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.03.20-08.04.17:631][528]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.04.17:655][528]LoadErrors: New page: 맵 로드중: Test_Actor_Movement.umap
-[2017.03.20-08.04.17:674][528]MapCheck: New page: 맵 체크
-[2017.03.20-08.04.17:674][528]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.04.17:685][528]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E3423662A0
-[2017.03.20-08.04.17:890][528]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.03.20-08.04.17:929][528]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.03.20-08.04.18:019][528]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 89.354ms.
-[2017.03.20-08.04.18:019][528]LogFileHelpers: Loading map 'Test_Actor_Movement' took 0.389
-[2017.03.20-08.04.24:385][264]LogAIModule: Creating AISystem for world Test_Player_Movement
-[2017.03.20-08.04.24:411][264]Cmd: MAP LOAD FILE="../../../../../../Documents/Unreal Projects/PaperNinja/Content/Map/Test/Test_Player_Movement.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.03.20-08.04.24:411][264]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.04.24:432][264]LoadErrors: New page: 맵 로드중: Test_Player_Movement.umap
-[2017.03.20-08.04.24:433][264]MapCheck: New page: 맵 체크
-[2017.03.20-08.04.24:433][264]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.04.24:443][264]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E34F1BCA40
-[2017.03.20-08.04.24:494][264]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.03.20-08.04.24:516][264]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.03.20-08.04.24:604][264]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 87.521ms.
-[2017.03.20-08.04.24:604][264]LogFileHelpers: Loading map 'Test_Player_Movement' took 0.194
-[2017.03.20-08.04.26:072][419]LogAIModule: Creating AISystem for world Test_BasicBlueprint
-[2017.03.20-08.04.26:089][419]Cmd: MAP LOAD FILE="../../../../../../Documents/Unreal Projects/PaperNinja/Content/Map/Test/Test_BasicBlueprint.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.03.20-08.04.26:089][419]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.04.26:109][419]LoadErrors: New page: 맵 로드중: Test_BasicBlueprint.umap
-[2017.03.20-08.04.26:110][419]MapCheck: New page: 맵 체크
-[2017.03.20-08.04.26:110][419]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.04.26:121][419]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E35AE78B80
-[2017.03.20-08.04.26:172][419]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.03.20-08.04.26:194][419]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.03.20-08.04.26:263][419]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 69.162ms.
-[2017.03.20-08.04.26:263][419]LogFileHelpers: Loading map 'Test_BasicBlueprint' took 0.175
-[2017.03.20-08.04.32:698][177]LogAIModule: Creating AISystem for world Test_Actor_Movement
-[2017.03.20-08.04.32:716][177]Cmd: MAP LOAD FILE="../../../../../../Documents/Unreal Projects/PaperNinja/Content/Map/Test/Test_Actor_Movement.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.03.20-08.04.32:717][177]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.04.32:739][177]LoadErrors: New page: 맵 로드중: Test_Actor_Movement.umap
-[2017.03.20-08.04.32:740][177]MapCheck: New page: 맵 체크
-[2017.03.20-08.04.32:740][177]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.04.32:752][177]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E35AE7B740
-[2017.03.20-08.04.32:812][177]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.03.20-08.04.32:833][177]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.03.20-08.04.32:905][177]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 71.495ms.
-[2017.03.20-08.04.32:906][177]LogFileHelpers: Loading map 'Test_Actor_Movement' took 0.190
-[2017.03.20-08.04.51:380][318]LogAIModule: Creating AISystem for world Test_Player_Movement
-[2017.03.20-08.04.51:394][318]Cmd: MAP LOAD FILE="../../../../../../Documents/Unreal Projects/PaperNinja/Content/Map/Test/Test_Player_Movement.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.03.20-08.04.51:394][318]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.04.51:413][318]LoadErrors: New page: 맵 로드중: Test_Player_Movement.umap
-[2017.03.20-08.04.51:414][318]MapCheck: New page: 맵 체크
-[2017.03.20-08.04.51:414][318]LightingResults: New page: 라이팅 빌드
-[2017.03.20-08.04.51:425][318]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E35AEC98A0
-[2017.03.20-08.04.51:487][318]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.03.20-08.04.51:507][318]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.03.20-08.04.51:589][318]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 81.589ms.
-[2017.03.20-08.04.51:590][318]LogFileHelpers: Loading map 'Test_Player_Movement' took 0.197
-[2017.03.20-08.05.37:984][629]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2017.03.20-08.05.38:923][629]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0016 seconds. Added 107 classes and 0 folders.
-[2017.03.20-08.07.01:672][670]LogRenderer: Reallocating scene render targets to support 912x684 (Frame:22883).
-[2017.03.20-08.07.49:374][847]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.03.20-08.07.49:404][847]PIE: New page: PIE 세션: Test_Player_Movement (2017. 3. 21. 오전 2:07:49)
-[2017.03.20-08.07.49:404][847]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
-[2017.03.20-08.07.49:438][847]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033650s)
-[2017.03.20-08.07.49:471][847]LogAIModule: Creating AISystem for world Test_Player_Movement
-[2017.03.20-08.07.49:472][847]LogPlayLevel: PIE: World Init took: (0.033987s)
-[2017.03.20-08.07.49:472][847]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.068099s)
-[2017.03.20-08.07.49:484][847]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.07.49:508][847]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E374DB44A0
-[2017.03.20-08.07.49:569][847]LogInit: XAudio2 using 'SAMSUNG(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.20-08.07.49:586][847]LogInit: FAudioDevice initialized.
-[2017.03.20-08.07.49:797][847]LogWorld: Game class is 'PNGameMode_C'
-[2017.03.20-08.07.49:869][847]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.03.20-17.07.49
-[2017.03.20-08.07.49:870][847]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.07.49:870][847]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.07.49:871][847]LogWorld: Bringing up level for play took: 0.007952
-[2017.03.20-08.07.49:977][847]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: 0.129
-[2017.03.20-08.07.50:174][848]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.098775 > MaxSimulationTimeStep (0.050) for 'PNPlayerPawn_C_5'
-[2017.03.20-08.07.58:807][822]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E3069F87C0
-[2017.03.20-08.08.02:731][265]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (Sky Sphere)
-[2017.03.20-08.08.03:807][363]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2017.03.20-08.12.04:434][419]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2017.03.20-08.12.05:116][488]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2017.03.20-08.12.05:602][545]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (Sky Sphere)
-[2017.03.20-08.13.04:968][506]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.03.20-08.13.04:969][506]PIE: New page: PIE 세션: Test_Player_Movement (2017. 3. 21. 오전 2:13:04)
-[2017.03.20-08.13.04:969][506]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
-[2017.03.20-08.13.04:974][506]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005340s)
-[2017.03.20-08.13.05:319][506]LogAIModule: Creating AISystem for world Test_Player_Movement
-[2017.03.20-08.13.05:319][506]LogPlayLevel: PIE: World Init took: (0.345633s)
-[2017.03.20-08.13.05:320][506]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.351298s)
-[2017.03.20-08.13.05:320][506]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.13.05:440][506]LogInit: XAudio2 using 'SAMSUNG(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.20-08.13.05:457][506]LogInit: FAudioDevice initialized.
-[2017.03.20-08.13.05:507][506]LogWorld: Game class is 'PNGameMode_C'
-[2017.03.20-08.13.05:512][506]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.03.20-17.13.05
-[2017.03.20-08.13.05:512][506]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.13.05:513][506]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.13.05:513][506]LogWorld: Bringing up level for play took: 0.003881
-[2017.03.20-08.13.05:517][506]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.332
-[2017.03.20-08.13.05:583][507]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.100000 > MaxSimulationTimeStep (0.050) for 'PNPlayerPawn_C_7'
-[2017.03.20-08.13.24:751][711]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E31E7AF600
-[2017.03.20-08.13.24:752][711]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E372D34D60
-[2017.03.20-08.14.30:470][249]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2017.03.20-08.22.53:905][935]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.23.58:552][837]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_0) Not registered. Aborting.
-[2017.03.20-08.24.37:100][510]BlueprintLog: New page: PNPlayerPawn 컴파일
-[2017.03.20-08.24.39:565][510]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_1) Not registered. Aborting.
-[2017.03.20-08.24.39:598][510]BlueprintEditorCompileResults: 정보 [1286.12] PNPlayerPawn 컴파일에 성공했습니다! [소요시간 2,498 ms]
-[2017.03.20-08.24.41:821][718]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.03.20-08.24.41:822][718]PIE: New page: PIE 세션: Test_Player_Movement (2017. 3. 21. 오전 2:24:41)
-[2017.03.20-08.24.41:822][718]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
-[2017.03.20-08.24.41:826][718]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004042s)
-[2017.03.20-08.24.41:826][718]LogAIModule: Creating AISystem for world Test_Player_Movement
-[2017.03.20-08.24.41:827][718]LogPlayLevel: PIE: World Init took: (0.000891s)
-[2017.03.20-08.24.41:827][718]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.005203s)
-[2017.03.20-08.24.41:827][718]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.24.41:910][718]LogInit: XAudio2 using 'SAMSUNG(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.20-08.24.41:919][718]LogAudio:Warning: CreateMasteringVoice error: Unhandled error code -2147417848
-[2017.03.20-08.24.41:919][718]LogInit:Warning: Failed to create the mastering voice for XAudio2
-[2017.03.20-08.24.41:956][718]LogWorld: Game class is 'PNGameMode_C'
-[2017.03.20-08.24.41:960][718]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.03.20-17.24.41
-[2017.03.20-08.24.41:960][718]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.24.41:960][718]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.24.41:960][718]LogWorld: Bringing up level for play took: 0.002554
-[2017.03.20-08.24.41:962][718]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: 0.114
-[2017.03.20-08.24.54:186][164]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E341D8A5C0
-[2017.03.20-08.25.43:158][596]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.03.20-08.25.43:158][596]PIE: New page: PIE 세션: Test_Player_Movement (2017. 3. 21. 오전 2:25:43)
-[2017.03.20-08.25.43:158][596]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
-[2017.03.20-08.25.43:161][596]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003521s)
-[2017.03.20-08.25.43:163][596]LogAIModule: Creating AISystem for world Test_Player_Movement
-[2017.03.20-08.25.43:163][596]LogPlayLevel: PIE: World Init took: (0.001140s)
-[2017.03.20-08.25.43:163][596]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.004987s)
-[2017.03.20-08.25.43:163][596]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.25.43:536][596]LogInit: XAudio2 using 'SAMSUNG(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.20-08.25.43:542][596]LogAudio:Warning: CreateMasteringVoice error: Unhandled error code -2147417848
-[2017.03.20-08.25.43:542][596]LogInit:Warning: Failed to create the mastering voice for XAudio2
-[2017.03.20-08.25.43:573][596]LogWorld: Game class is 'PNGameMode_C'
-[2017.03.20-08.25.43:576][596]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.03.20-17.25.43
-[2017.03.20-08.25.43:576][596]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.25.43:591][596]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.25.43:591][596]LogWorld: Bringing up level for play took: 0.016370
-[2017.03.20-08.25.43:650][596]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.198
-[2017.03.20-08.25.43:691][597]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.098775 > MaxSimulationTimeStep (0.050) for 'PNPlayerPawn_C_9'
-[2017.03.20-08.25.58:145][313]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E37161E200
-[2017.03.20-08.26.21:586][588]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.26.22:924][702]BlueprintLog: New page: PNPlayerPawn 컴파일
-[2017.03.20-08.26.22:971][702]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_2) Not registered. Aborting.
-[2017.03.20-08.26.22:997][702]BlueprintEditorCompileResults: 정보 [1389.52] PNPlayerPawn 컴파일에 성공했습니다! [소요시간 73 ms]
-[2017.03.20-08.26.25:760][963]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.03.20-08.26.25:760][963]PIE: New page: PIE 세션: Test_Player_Movement (2017. 3. 21. 오전 2:26:25)
-[2017.03.20-08.26.25:760][963]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
-[2017.03.20-08.26.25:764][963]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003575s)
-[2017.03.20-08.26.25:765][963]LogAIModule: Creating AISystem for world Test_Player_Movement
-[2017.03.20-08.26.25:765][963]LogPlayLevel: PIE: World Init took: (0.001247s)
-[2017.03.20-08.26.25:765][963]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.005107s)
-[2017.03.20-08.26.25:765][963]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.26.25:803][963]LogInit: XAudio2 using 'SAMSUNG(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.20-08.26.25:809][963]LogAudio:Warning: CreateMasteringVoice error: Unhandled error code -2147417848
-[2017.03.20-08.26.25:809][963]LogInit:Warning: Failed to create the mastering voice for XAudio2
-[2017.03.20-08.26.25:841][963]LogWorld: Game class is 'PNGameMode_C'
-[2017.03.20-08.26.25:844][963]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.03.20-17.26.25
-[2017.03.20-08.26.25:844][963]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.26.25:844][963]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.26.25:844][963]LogWorld: Bringing up level for play took: 0.002184
-[2017.03.20-08.26.25:846][963]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.002
-[2017.03.20-08.26.46:377][400]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E380600900
-[2017.03.20-08.27.08:741][ 11]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.27.08:764][ 11]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Map/Test/Test_Player_Movement' took 0.023
-[2017.03.20-08.27.08:777][ 11]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/PNPlayerPawn] ([1] browsable assets)...
-[2017.03.20-08.27.08:807][ 11]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/PNPlayerPawn.PNPlayerPawn]
-[2017.03.20-08.27.08:807][ 11]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/PNPlayerPawn]
-[2017.03.20-08.27.08:965][ 11]LogSavePackage: Save=107.945000ms
-[2017.03.20-08.27.08:965][ 11]LogSavePackage: Moving '../../../../../../Documents/Unreal Projects/PaperNinja/Saved/PNPlayerPawn_Auto1A2F4CFF74E3594C3652985AAF472AEDD.tmp' to '../../../../../../Documents/Unreal Projects/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerPawn_Auto1.uasset'
-[2017.03.20-08.27.08:979][ 11]LogSavePackage: Total save time: 170.757003ms
-[2017.03.20-08.27.08:979][ 11]LogSavePackage:Display: Finished SavePackage ../../../../../../Documents/Unreal Projects/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerPawn_Auto1.uasset
-[2017.03.20-08.27.08:979][ 11]LogFileHelpers: Auto-saving content packages took 0.214
-[2017.03.20-08.27.35:637][592]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.27.37:704][766]BlueprintLog: New page: PNPlayerPawn 컴파일
-[2017.03.20-08.27.37:751][766]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_3) Not registered. Aborting.
-[2017.03.20-08.27.37:776][766]BlueprintEditorCompileResults: 정보 [1464.30] PNPlayerPawn 컴파일에 성공했습니다! [소요시간 72 ms]
-[2017.03.20-08.27.39:700][940]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.03.20-08.27.39:700][940]PIE: New page: PIE 세션: Test_Player_Movement (2017. 3. 21. 오전 2:27:39)
-[2017.03.20-08.27.39:700][940]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
-[2017.03.20-08.27.39:704][940]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003709s)
-[2017.03.20-08.27.39:705][940]LogAIModule: Creating AISystem for world Test_Player_Movement
-[2017.03.20-08.27.39:705][940]LogPlayLevel: PIE: World Init took: (0.001180s)
-[2017.03.20-08.27.39:705][940]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.005180s)
-[2017.03.20-08.27.39:705][940]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.27.39:745][940]LogInit: XAudio2 using 'SAMSUNG(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.20-08.27.39:751][940]LogAudio:Warning: CreateMasteringVoice error: Unhandled error code -2147417848
-[2017.03.20-08.27.39:751][940]LogInit:Warning: Failed to create the mastering voice for XAudio2
-[2017.03.20-08.27.39:797][940]LogWorld: Game class is 'PNGameMode_C'
-[2017.03.20-08.27.39:805][940]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.03.20-17.27.39
-[2017.03.20-08.27.39:805][940]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.27.39:805][940]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.27.39:806][940]LogWorld: Bringing up level for play took: 0.005837
-[2017.03.20-08.27.39:810][940]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.038
-[2017.03.20-08.27.53:661][569]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E3951A32E0
-[2017.03.20-08.29.38:732][577]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.29.57:953][143]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2380.EdGraphPin_23191''
-[2017.03.20-08.30.36:936][896]BlueprintLog: New page: PNPlayerPawn 컴파일
-[2017.03.20-08.30.36:990][896]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_4) Not registered. Aborting.
-[2017.03.20-08.30.37:018][896]BlueprintEditorCompileResults: 정보 [1643.54] PNPlayerPawn 컴파일에 성공했습니다! [소요시간 82 ms]
-[2017.03.20-08.30.39:286][111]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.03.20-08.30.39:286][111]PIE: New page: PIE 세션: Test_Player_Movement (2017. 3. 21. 오전 2:30:39)
-[2017.03.20-08.30.39:286][111]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
-[2017.03.20-08.30.39:290][111]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003426s)
-[2017.03.20-08.30.39:290][111]LogAIModule: Creating AISystem for world Test_Player_Movement
-[2017.03.20-08.30.39:291][111]LogPlayLevel: PIE: World Init took: (0.000756s)
-[2017.03.20-08.30.39:291][111]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.004357s)
-[2017.03.20-08.30.39:291][111]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-08.30.39:311][111]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E33F63C4A0
-[2017.03.20-08.30.39:330][111]LogInit: XAudio2 using 'SAMSUNG(인텔(R) 디스플레이 오디오)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.20-08.30.39:336][111]LogAudio:Warning: CreateMasteringVoice error: Unhandled error code -2147417848
-[2017.03.20-08.30.39:336][111]LogInit:Warning: Failed to create the mastering voice for XAudio2
-[2017.03.20-08.30.39:371][111]LogWorld: Game class is 'PNGameMode_C'
-[2017.03.20-08.30.39:374][111]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.03.20-17.30.39
-[2017.03.20-08.30.39:374][111]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.30.39:374][111]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.03.20-08.30.39:375][111]LogWorld: Bringing up level for play took: 0.002398
-[2017.03.20-08.30.39:377][111]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.472
-[2017.03.20-08.30.40:777][112]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.098775 > MaxSimulationTimeStep (0.050) for 'PNPlayerPawn_C_8'
-[2017.03.20-08.30.54:539][746]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E383675120
-[2017.03.20-09.22.23:896][360]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-09.22.23:924][360]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Map/Test/Test_Player_Movement' took 0.028
-[2017.03.20-09.22.23:930][360]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/PNPlayerPawn] ([1] browsable assets)...
-[2017.03.20-09.22.23:962][360]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/PNPlayerPawn.PNPlayerPawn]
-[2017.03.20-09.22.23:962][360]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/PNPlayerPawn]
-[2017.03.20-09.22.24:419][360]LogSavePackage: Save=100.464905ms
-[2017.03.20-09.22.24:420][360]LogSavePackage: Moving '../../../../../../Documents/Unreal Projects/PaperNinja/Saved/PNPlayerPawn_Auto2B66239E64BF96D2451435A98C42DB85A.tmp' to '../../../../../../Documents/Unreal Projects/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerPawn_Auto2.uasset'
-[2017.03.20-09.22.24:423][360]LogSavePackage: Total save time: 460.016627ms
-[2017.03.20-09.22.24:423][360]LogSavePackage:Display: Finished SavePackage ../../../../../../Documents/Unreal Projects/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerPawn_Auto2.uasset
-[2017.03.20-09.22.24:423][360]LogFileHelpers: Auto-saving content packages took 0.498
-[2017.03.20-09.24.50:470][785]LogHttp:Warning: Timeout processing Http request. 000001E372BEF000
-[2017.03.20-09.51.17:050][981]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2017.03.20-09.51.17:074][981]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E31E7E5B20
-[2017.03.20-09.51.19:629][981]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PNPlayerPawn" FILE="../../../../../../Documents/Unreal Projects/PaperNinja/Content/Blueprints/PNPlayerPawn.uasset" SILENT=true
-[2017.03.20-09.51.19:704][981]LogSavePackage: Save=67.440933ms
-[2017.03.20-09.51.19:704][981]LogSavePackage: Moving '../../../../../../Documents/Unreal Projects/PaperNinja/Saved/PNPlayerPawn5F0E76ED413A42B4910F948D1A1B4AEB.tmp' to '../../../../../../Documents/Unreal Projects/PaperNinja/Content/Blueprints/PNPlayerPawn.uasset'
-[2017.03.20-09.51.19:707][981]LogSavePackage: Total save time: 76.767545ms
-[2017.03.20-09.51.19:707][981]LogSavePackage:Display: Finished SavePackage ../../../../../../Documents/Unreal Projects/PaperNinja/Content/Blueprints/PNPlayerPawn.uasset
-[2017.03.20-09.51.19:992][981]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.03.20-09.51.20:232][982]Cmd: QUIT_EDITOR
-[2017.03.20-09.51.20:419][982]LogExit: Preparing to exit.
-[2017.03.20-09.51.21:552][982]LogExit: Editor shut down
-[2017.03.20-09.51.21:552][982]LogExit: Transaction tracking system shut down
-[2017.03.20-09.51.21:553][982]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E35AECAF20
-[2017.03.20-09.51.21:553][982]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E374DC1DA0
-[2017.03.20-09.51.21:554][982]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E33F50CC20
-[2017.03.20-09.51.21:554][982]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E35AECB880
-[2017.03.20-09.51.21:554][982]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E35B66FB00
-[2017.03.20-09.51.21:558][982]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E31E7E6480
-[2017.03.20-09.51.21:559][982]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E372CD00E0
-[2017.03.20-09.51.21:559][982]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001E372CD2B60
-[2017.03.20-09.51.21:708][982]LogExit: Object subsystem successfully closed.
-[2017.03.20-09.51.21:726][982]LogD3D11RHI: Shutdown
-[2017.03.20-09.51.21:726][982]LogD3D11RHI: CleanupD3DDevice
-[2017.03.20-09.51.21:810][982]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.03.20-09.51.21:881][982]LogModuleManager: Shutting down and abandoning module CookingStats (202)
-[2017.03.20-09.51.21:881][982]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (201)
-[2017.03.20-09.51.21:881][982]LogModuleManager: Shutting down and abandoning module BlueprintGraph (200)
-[2017.03.20-09.51.21:881][982]LogModuleManager: Shutting down and abandoning module CrashTracker (199)
-[2017.03.20-09.51.21:881][982]LogModuleManager: Shutting down and abandoning module WorldBrowser (198)
-[2017.03.20-09.51.21:881][982]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
-[2017.03.20-09.51.21:881][982]LogModuleManager: Shutting down and abandoning module SuperSearch (196)
-[2017.03.20-09.51.21:881][982]LogModuleManager: Shutting down and abandoning module WidgetCarousel (195)
-[2017.03.20-09.51.21:881][982]LogModuleManager: Shutting down and abandoning module AddContentDialog (194)
-[2017.03.20-09.51.21:882][982]LogModuleManager: Shutting down and abandoning module EditorWidgets (193)
-[2017.03.20-09.51.21:882][982]LogModuleManager: Shutting down and abandoning module CollectionManager (192)
-[2017.03.20-09.51.21:882][982]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
-[2017.03.20-09.51.21:882][982]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
-[2017.03.20-09.51.21:882][982]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module BspMode (185)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
-[2017.03.20-09.51.21:883][982]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
-[2017.03.20-09.51.22:606][982]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
-[2017.03.20-09.51.22:606][982]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
-[2017.03.20-09.51.22:606][982]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
-[2017.03.20-09.51.22:606][982]LogModuleManager: Shutting down and abandoning module MergeActors (169)
-[2017.03.20-09.51.22:606][982]LogModuleManager: Shutting down and abandoning module SizeMap (168)
-[2017.03.20-09.51.22:606][982]LogModuleManager: Shutting down and abandoning module TreeMap (167)
-[2017.03.20-09.51.22:606][982]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
-[2017.03.20-09.51.22:606][982]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
-[2017.03.20-09.51.22:606][982]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module XmlParser (158)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module Blutility (157)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module AutomationController (146)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module Layers (144)
-[2017.03.20-09.51.22:607][982]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module Persona (140)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module Kismet (139)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module Toolbox (136)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module OutputLog (133)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module GammaUI (132)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module Documentation (131)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module Analytics (127)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module AIModule (124)
-[2017.03.20-09.51.22:608][982]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
-[2017.03.20-09.51.22:799][982]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
-[2017.03.20-09.51.22:799][982]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
-[2017.03.20-09.51.22:799][982]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
-[2017.03.20-09.51.22:799][982]LogModuleManager: Shutting down and abandoning module SteamVR (119)
-[2017.03.20-09.51.22:799][982]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
-[2017.03.20-09.51.22:799][982]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
-[2017.03.20-09.51.22:799][982]LogModuleManager: Shutting down and abandoning module OculusInput (116)
-[2017.03.20-09.51.22:799][982]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module CableComponent (113)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
-[2017.03.20-09.51.22:894][982]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module SourceControl (100)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module HotReload (93)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module MainFrame (92)
-[2017.03.20-09.51.22:895][982]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
-[2017.03.20-09.51.22:897][982]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
-[2017.03.20-09.51.22:899][982]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
-[2017.03.20-09.51.23:010][982]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
-[2017.03.20-09.51.23:011][982]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
-[2017.03.20-09.51.23:011][982]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
-[2017.03.20-09.51.23:112][982]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
-[2017.03.20-09.51.23:112][982]LogModuleManager: Shutting down and abandoning module Paper2D (84)
-[2017.03.20-09.51.23:112][982]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
-[2017.03.20-09.51.23:119][982]LogModuleManager: Shutting down and abandoning module Media (82)
-[2017.03.20-09.51.23:119][982]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
-[2017.03.20-09.51.23:139][982]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
-[2017.03.20-09.51.23:139][982]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
-[2017.03.20-09.51.23:139][982]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
-[2017.03.20-09.51.23:139][982]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
-[2017.03.20-09.51.23:139][982]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
-[2017.03.20-09.51.23:139][982]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
-[2017.03.20-09.51.23:140][982]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
-[2017.03.20-09.51.23:140][982]LogModuleManager: Shutting down and abandoning module MessageLog (73)
-[2017.03.20-09.51.23:140][982]LogModuleManager: Shutting down and abandoning module Sequencer (72)
-[2017.03.20-09.51.23:140][982]LogModuleManager: Shutting down and abandoning module AssetTools (71)
-[2017.03.20-09.51.23:140][982]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
-[2017.03.20-09.51.23:140][982]LogModuleManager: Shutting down and abandoning module UMG (69)
-[2017.03.20-09.51.23:140][982]LogModuleManager: Shutting down and abandoning module Slate (68)
-[2017.03.20-09.51.23:140][982]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
-[2017.03.20-09.51.23:143][982]LogModuleManager: Shutting down and abandoning module SessionServices (66)
-[2017.03.20-09.51.23:143][982]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
-[2017.03.20-09.51.23:143][982]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
-[2017.03.20-09.51.23:143][982]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
-[2017.03.20-09.51.23:143][982]LogModuleManager: Shutting down and abandoning module Networking (61)
-[2017.03.20-09.51.23:143][982]LogModuleManager: Shutting down and abandoning module Core (60)
-[2017.03.20-09.51.23:143][982]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
-[2017.03.20-09.51.23:143][982]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
-[2017.03.20-09.51.23:143][982]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
-[2017.03.20-09.51.23:143][982]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
-[2017.03.20-09.51.23:237][982]LogDerivedDataCache: Shutdown
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2017.03.20-09.51.23:237][982]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2017.03.20-09.51.23:238][982]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2017.03.20-09.51.23:238][982]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2017.03.20-09.51.25:296][982]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2017.03.20-09.51.25:296][982]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2017.03.20-09.51.25:296][982]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2017.03.20-09.51.25:296][982]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2017.03.20-09.51.25:297][982]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2017.03.20-09.51.25:297][982]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2017.03.20-09.51.25:297][982]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2017.03.20-09.51.25:302][982]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2017.03.20-09.51.25:302][982]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2017.03.20-09.51.25:302][982]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2017.03.20-09.51.25:302][982]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2017.03.20-09.51.25:302][982]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2017.03.20-09.51.25:302][982]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2017.03.20-09.51.25:302][982]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2017.03.20-09.51.25:302][982]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2017.03.20-09.51.25:302][982]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2017.03.20-09.51.25:302][982]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2017.03.20-09.51.25:306][982]LogExit: Exiting.
-[2017.03.20-09.51.25:309][982]Log file closed, 03/20/17 18:51:25
+[2017.04.05-05.30.13:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
+Localization Resource: (F:/Program Files (x86)/UE_4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
+Localization Resource: (F:/Program Files (x86)/UE_4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
+[2017.04.05-05.30.13:648][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GT 755M (Feature Level 11_0)
+[2017.04.05-05.30.13:648][  0]LogD3D11RHI: Adapter has 971MB of dedicated video memory, 0MB of dedicated system memory, and 3072MB of shared system memory, 2 output[s]
+[2017.04.05-05.30.13:648][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2017.04.05-05.30.13:657][  0]LogD3D11RHI: !Direct3DDevice
+[2017.04.05-05.30.13:657][  0]LogRHI: Texture pool is 680 MB (70% of 971 MB)
+[2017.04.05-05.30.13:727][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.05-05.30.13:735][  0]LogShaderCompilers: Guid format shader working directory is -2 characters bigger than the processId version (../../../../../Study/unreal4104.study/PaperNinja/Intermediate/Shaders/WorkingDirectory/4132/).
+[2017.04.05-05.30.13:735][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Naver/AppData/Local/Temp/UnrealShaderWorkingDir/957EFC11406D2CFAC1EC3F94EBE7B6CD/'.
+[2017.04.05-05.30.13:735][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.05-05.30.15:263][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.05-05.30.15:268][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.05-05.30.15:273][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.05-05.30.15:278][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.05-05.30.15:283][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.05-05.30.15:288][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.05-05.30.15:293][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.05-05.30.15:297][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.05-05.30.15:302][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.05-05.30.15:306][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.05-05.30.15:315][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.05-05.30.15:315][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.05-05.30.15:321][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.05-05.30.15:324][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.05-05.30.15:345][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.05-05.30.15:349][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.05-05.30.15:353][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.05-05.30.15:360][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.05-05.30.15:360][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.05-05.30.15:510][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.05-05.30.15:557][  0]LogDerivedDataCache: Loaded boot cache 0.05s 57MB C:/Users/Naver/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2017.04.05-05.30.15:557][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Naver/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2017.04.05-05.30.15:557][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Study/unreal4104.study/PaperNinja/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.05-05.30.15:557][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.05-05.30.15:557][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Study/unreal4104.study/PaperNinja/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.05-05.30.15:557][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.05-05.30.15:613][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.05-05.30.15:626][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Naver/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.05-05.30.15:878][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.05-05.30.15:879][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2017.04.05-05.30.16:028][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.04.05-05.30.16:028][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.05-05.30.16:498][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.05-05.30.17:915][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.05-05.30.18:129][  0]LogAssetRegistry: FAssetRegistry took 0.0104 seconds to start up
+[2017.04.05-05.30.18:560][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.05-05.30.18:855][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.05-05.30.18:985][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.05-05.30.19:010][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.05-05.30.19:554][  0]LogObj: 28633 objects as part of root set at end of initial load.
+[2017.04.05-05.30.19:554][  0]LogUObjectAllocator: 6099752 out of 0 bytes used by permanent object pool.
+[2017.04.05-05.30.19:621][  0]LogEngine: Initializing Engine...
+[2017.04.05-05.30.19:625][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2017.04.05-05.30.19:629][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.04.05-05.30.19:783][  0]LogAIModule: Creating AISystem for world NewWorld
+[2017.04.05-05.30.19:848][  0]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-05.30.19:954][  0]LogInit: FAudioDevice initialized.
+[2017.04.05-05.30.19:997][  0]LogDerivedDataCache: Saved boot cache 0.04s 57MB C:/Users/Naver/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2017.04.05-05.30.20:001][  0]LogInit: Texture streaming: Enabled
+[2017.04.05-05.30.20:011][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2017.04.05-05.30.20:011][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2017.04.05-05.30.20:011][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId a4f805fc4f2f3c71dfcb7b8fe1938769|7260c19b5aeb45edafca6b45e10b0fc9|7ea789e9-5de2-4aa3-8e1a-7db3f90068bf
+[2017.04.05-05.30.20:012][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2017.04.05-05.30.20:023][  0]LogInit: Transaction tracking system initialized
+[2017.04.05-05.30.20:119][  0]BlueprintLog: New page: 에디터 로드
+[2017.04.05-05.30.20:366][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2017.04.05-05.30.20:583][  0]LogConsoleResponse:Display: 
+[2017.04.05-05.30.20:756][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2017.04.05-05.30.21:067][  0]LogFileCache: Scanning file cache for directory 'F:/Study/unreal4104.study/PaperNinja/Content/' took 0.04s
+[2017.04.05-05.30.21:067][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.05-05.30.21:067][  0]Cmd: MAP LOAD FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.05-05.30.21:176][  0]LightingResults: New page: 라이팅 빌드
+[2017.04.05-05.30.21:182][  0]MapCheck: New page: 맵 체크
+[2017.04.05-05.30.21:182][  0]LightingResults: New page: 라이팅 빌드
+[2017.04.05-05.30.21:193][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000020803B00
+[2017.04.05-05.30.22:300][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.05-05.30.22:324][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.05-05.30.22:324][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.05-05.30.22:502][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 177.934ms.
+[2017.04.05-05.30.22:502][  0]LogFileHelpers: Loading map 'Minimal_Default' took 1.436
+[2017.04.05-05.30.22:729][  0]LogCollectionManager: Loaded 0 collections in 0.011268 seconds
+[2017.04.05-05.30.22:788][  0]LogFileCache: Scanning file cache for directory 'F:/Study/unreal4104.study/PaperNinja/Saved/Collections/' took 0.01s
+[2017.04.05-05.30.22:788][  0]LogFileCache: Scanning file cache for directory 'F:/Study/unreal4104.study/PaperNinja/Content/Developers/Naver/Collections/' took 0.01s
+[2017.04.05-05.30.22:788][  0]LogFileCache: Scanning file cache for directory 'F:/Study/unreal4104.study/PaperNinja/Content/Collections/' took 0.01s
+[2017.04.05-05.30.22:788][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.04.05-05.30.22:795][  0]LogContentBrowser: Native class hierarchy populated in 0.0073 seconds. Added 1893 classes and 338 folders.
+[2017.04.05-05.30.22:810][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2017.04.05-05.30.23:316][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0019 seconds. Added 0 classes and 0 folders.
+[2017.04.05-05.30.23:344][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.04.05-05.30.23:468][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.05-05.30.23:477][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2017.04.05-05.30.23:498][  0]LogLoad: Full Startup: 11.48 seconds (BP compile: 0.04 seconds)
+[2017.04.05-05.30.23:517][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2017.04.05-05.30.24:002][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.04.05-05.30.24:197][  0]LogRenderer: Reallocating scene render targets to support 1576x836 (Frame:2).
+[2017.04.05-05.30.24:613][  3]LogAssetRegistry: Asset discovery search completed in 6.4946 seconds
+[2017.04.05-05.30.24:613][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.04.05-05.30.24:613][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000016 seconds (updated 0 objects)
+[2017.04.05-05.30.51:521][450]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.05-05.30.51:522][450]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.05-05.30.51:522][450]PIE: New page: PIE 세션: Minimal_Default (2017. 4. 5. 오후 11:30:51)
+[2017.04.05-05.30.51:522][450]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.05-05.30.51:528][450]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006125s)
+[2017.04.05-05.30.51:529][450]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.05-05.30.51:529][450]LogPlayLevel: PIE: World Init took: (0.000696s)
+[2017.04.05-05.30.51:529][450]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007053s)
+[2017.04.05-05.30.51:597][450]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-05.30.51:622][450]LogInit: FAudioDevice initialized.
+[2017.04.05-05.30.51:790][450]LogWorld: Game class is 'PNGameMode_C'
+[2017.04.05-05.30.51:800][450]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.05-14.30.51
+[2017.04.05-05.30.51:800][450]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.30.51:800][450]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.30.51:800][450]LogWorld: Bringing up level for play took: 0.008216
+[2017.04.05-05.30.51:805][450]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: -0.687
+[2017.04.05-05.30.51:805][450]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.05-05.30.51:877][451]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.065424 > MaxSimulationTimeStep (0.050) for 'PNPlayerPawn_C_0'
+[2017.04.05-05.30.52:936][485]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.05-05.30.53:008][485]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.05-05.30.53:022][485]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001C1EF600
+[2017.04.05-05.31.00:514][882]LogMaterial: Missing cached shader map for material M_Shuriken, compiling. 
+[2017.04.05-05.31.00:530][882]LogAIModule: Creating AISystem for world Test_Player_Movement
+[2017.04.05-05.31.00:551][882]Cmd: MAP LOAD FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Map/Test/Test_Player_Movement.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.05-05.31.00:551][882]LightingResults: New page: 라이팅 빌드
+[2017.04.05-05.31.00:611][882]LoadErrors: New page: 맵 로드중: Test_Player_Movement.umap
+[2017.04.05-05.31.00:613][882]MapCheck: New page: 맵 체크
+[2017.04.05-05.31.00:613][882]LightingResults: New page: 라이팅 빌드
+[2017.04.05-05.31.00:623][882]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000010C1A700
+[2017.04.05-05.31.00:636][882]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.05-05.31.00:663][882]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.05-05.31.00:970][882]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 306.07ms.
+[2017.04.05-05.31.00:975][882]LogFileHelpers: Loading map 'Test_Player_Movement' took 0.426
+[2017.04.05-05.31.02:007][932]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.05-05.31.02:007][932]PIE: New page: PIE 세션: Test_Player_Movement (2017. 4. 5. 오후 11:31:02)
+[2017.04.05-05.31.02:007][932]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
+[2017.04.05-05.31.02:011][932]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003218s)
+[2017.04.05-05.31.02:011][932]LogAIModule: Creating AISystem for world Test_Player_Movement
+[2017.04.05-05.31.02:011][932]LogPlayLevel: PIE: World Init took: (0.000561s)
+[2017.04.05-05.31.02:011][932]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.003935s)
+[2017.04.05-05.31.02:011][932]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.31.02:183][932]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-05.31.02:231][932]LogInit: FAudioDevice initialized.
+[2017.04.05-05.31.02:290][932]LogWorld: Game class is 'PNGameMode_C'
+[2017.04.05-05.31.02:308][932]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.04.05-14.31.02
+[2017.04.05-05.31.02:308][932]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.31.02:309][932]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.31.02:309][932]LogWorld: Bringing up level for play took: 0.018014
+[2017.04.05-05.31.02:313][932]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.179
+[2017.04.05-05.31.11:385][271]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000DAA3240
+[2017.04.05-05.32.51:916][549]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.04.05-05.32.52:460][549]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0011 seconds. Added 107 classes and 0 folders.
+[2017.04.05-05.33.06:712][144]LogWindows: LaunchURL http://docs.unrealengine.com/latest/KOR/Engine/Blueprints/UserGuide/Types/ClassBlueprint/index.html?utm_source=editor&utm_medium=docs&utm_campaign=cb_docs
+[2017.04.05-05.37.10:066][403]LogRenderer: Reallocating scene render targets to support 1576x1300 (Frame:12476).
+[2017.04.05-05.38.09:999][807]BlueprintLog: New page: PNPlayerCameraManager 컴파일
+[2017.04.05-05.38.10:059][807]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.38.10:083][807]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000A67C720
+[2017.04.05-05.38.10:085][807]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001C1EF920
+[2017.04.05-05.38.10:085][807]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001967A2A0
+[2017.04.05-05.38.10:093][807]BlueprintEditorCompileResults: 정보 [0478.07] PNPlayerCameraManager 컴파일에 성공했습니다! [소요시간 93 ms]
+[2017.04.05-05.38.12:969][873]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.04.05-05.38.19:059][ 73]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.05-05.38.19:059][ 73]PIE: New page: PIE 세션: Test_Player_Movement (2017. 4. 5. 오후 11:38:19)
+[2017.04.05-05.38.19:059][ 73]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
+[2017.04.05-05.38.19:064][ 73]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004554s)
+[2017.04.05-05.38.19:064][ 73]LogAIModule: Creating AISystem for world Test_Player_Movement
+[2017.04.05-05.38.19:065][ 73]LogPlayLevel: PIE: World Init took: (0.000649s)
+[2017.04.05-05.38.19:065][ 73]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.005359s)
+[2017.04.05-05.38.19:065][ 73]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.38.19:144][ 73]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-05.38.19:177][ 73]LogInit: FAudioDevice initialized.
+[2017.04.05-05.38.19:211][ 73]LogWorld: Game class is 'PNGameMode_C'
+[2017.04.05-05.38.19:217][ 73]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.04.05-14.38.19
+[2017.04.05-05.38.19:217][ 73]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.38.19:217][ 73]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.38.19:218][ 73]LogWorld: Bringing up level for play took: 0.004911
+[2017.04.05-05.38.19:221][ 73]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: 0.725
+[2017.04.05-05.38.29:187][423]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000DB820C0
+[2017.04.05-05.38.45:141][875]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.38.49:674][875]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'PNPlayerController_C_5' or package '/Engine/Transient'.
+[2017.04.05-05.38.49:674][875]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_PNPlayerCameraManager_C_0' or package '/Engine/Transient'.
+[2017.04.05-05.38.49:674][875]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_PNPlayerCameraManager_C_1' or package '/Engine/Transient'.
+[2017.04.05-05.38.49:675][875]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_PNPlayerCameraManager_C_37' or package '/Engine/Transient'.
+[2017.04.05-05.38.49:675][875]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_PNPlayerCameraManager_C_42' or package '/Engine/Transient'.
+[2017.04.05-05.38.49:675][875]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_PNPlayerCameraManager_C_41' or package '/Engine/Transient'.
+[2017.04.05-05.38.49:821][875]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000F646020
+[2017.04.05-05.38.49:821][875]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000359F3A60
+[2017.04.05-05.38.58:979][183]BlueprintLog: New page: PNPlayerController 컴파일
+[2017.04.05-05.38.59:019][183]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.38.59:041][183]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002F5D5C60
+[2017.04.05-05.38.59:046][183]BlueprintEditorCompileResults: 정보 [0527.02] PNPlayerController 컴파일에 성공했습니다! [소요시간 67 ms]
+[2017.04.05-05.39.01:963][301]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.05-05.39.01:963][301]PIE: New page: PIE 세션: Test_Player_Movement (2017. 4. 5. 오후 11:39:01)
+[2017.04.05-05.39.01:963][301]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
+[2017.04.05-05.39.01:967][301]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004353s)
+[2017.04.05-05.39.01:968][301]LogAIModule: Creating AISystem for world Test_Player_Movement
+[2017.04.05-05.39.01:968][301]LogPlayLevel: PIE: World Init took: (0.000561s)
+[2017.04.05-05.39.01:968][301]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.005074s)
+[2017.04.05-05.39.01:987][301]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002F6D2020
+[2017.04.05-05.39.02:045][301]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-05.39.02:078][301]LogInit: FAudioDevice initialized.
+[2017.04.05-05.39.02:110][301]LogWorld: Game class is 'PNGameMode_C'
+[2017.04.05-05.39.02:116][301]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.04.05-14.39.02
+[2017.04.05-05.39.02:116][301]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.39.02:117][301]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.39.02:117][301]LogWorld: Bringing up level for play took: 0.004783
+[2017.04.05-05.39.02:121][301]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.377
+[2017.04.05-05.39.10:200][589]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002597D760
+[2017.04.05-05.39.38:676][981]BlueprintLog: New page: PNPlayerCameraManager 컴파일
+[2017.04.05-05.39.38:731][981]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.39.38:759][981]BlueprintEditorCompileResults: 정보 [0566.74] PNPlayerCameraManager 컴파일에 성공했습니다! [소요시간 83 ms]
+[2017.04.05-05.39.40:190][ 13]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.04.05-05.39.41:617][ 81]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.05-05.39.41:618][ 81]PIE: New page: PIE 세션: Test_Player_Movement (2017. 4. 5. 오후 11:39:41)
+[2017.04.05-05.39.41:618][ 81]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
+[2017.04.05-05.39.41:622][ 81]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004302s)
+[2017.04.05-05.39.41:622][ 81]LogAIModule: Creating AISystem for world Test_Player_Movement
+[2017.04.05-05.39.41:622][ 81]LogPlayLevel: PIE: World Init took: (0.000541s)
+[2017.04.05-05.39.41:623][ 81]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.005024s)
+[2017.04.05-05.39.41:699][ 81]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-05.39.41:723][ 81]LogInit: FAudioDevice initialized.
+[2017.04.05-05.39.41:759][ 81]LogWorld: Game class is 'PNGameMode_C'
+[2017.04.05-05.39.41:765][ 81]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.04.05-14.39.41
+[2017.04.05-05.39.41:765][ 81]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.39.41:765][ 81]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.39.41:765][ 81]LogWorld: Bringing up level for play took: 0.004911
+[2017.04.05-05.39.41:769][ 81]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.728
+[2017.04.05-05.39.55:697][576]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000324FB420
+[2017.04.05-05.41.54:471][287]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.41.54:493][287]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Map/Test/Test_Player_Movement' took 0.023
+[2017.04.05-05.41.54:503][287]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/PNPlayerController] ([1] browsable assets)...
+[2017.04.05-05.41.54:503][287]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/PNPlayerController]
+[2017.04.05-05.41.54:543][287]LogSavePackage: Save=10.712320ms
+[2017.04.05-05.41.54:543][287]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/PNPlayerController_Auto1F1CC4FA6490DE59CD1EB4BACC287AB65.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerController_Auto1.uasset'
+[2017.04.05-05.41.54:547][287]LogSavePackage: Total save time: 35.853669ms
+[2017.04.05-05.41.54:547][287]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerController_Auto1.uasset
+[2017.04.05-05.41.54:560][287]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/PNPlayerCameraManager] ([1] browsable assets)...
+[2017.04.05-05.41.54:560][287]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/PNPlayerCameraManager]
+[2017.04.05-05.41.54:586][287]LogSavePackage: Save=19.260622ms
+[2017.04.05-05.41.54:586][287]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/PNPlayerCameraManager_Auto1F327BD314C8BBA8B0A83A08C3F9B7CA9.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerCameraManager_Auto1.uasset'
+[2017.04.05-05.41.54:588][287]LogSavePackage: Total save time: 21.971177ms
+[2017.04.05-05.41.54:588][287]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerCameraManager_Auto1.uasset
+[2017.04.05-05.41.54:588][287]LogFileHelpers: Auto-saving content packages took 0.094
+[2017.04.05-05.42.43:407][ 89]LogEditorTransaction: Undo 컴포넌트 변경
+[2017.04.05-05.42.43:458][ 89]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.42.45:851][144]LogEditorTransaction: Undo View Pitch Max 편집
+[2017.04.05-05.42.46:140][150]LogEditorTransaction: Undo View Pitch Min 편집
+[2017.04.05-05.42.46:407][156]LogEditorTransaction: Undo Player Camera Manager Class 편집
+[2017.04.05-05.42.57:054][420]LogActorComponent: RegisterComponentWithWorld: Owner belongs to a DEADCLASS
+[2017.04.05-05.43.04:780][693]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.04.05-05.43.14:277][959]LogActorComponent: RegisterComponentWithWorld: Owner belongs to a DEADCLASS
+[2017.04.05-05.43.22:785][272]LogActorComponent: RegisterComponentWithWorld: Owner belongs to a DEADCLASS
+[2017.04.05-05.43.22:787][272]LogActorComponent: RegisterComponentWithWorld: Owner belongs to a DEADCLASS
+[2017.04.05-05.43.25:273][364]LogActorComponent: RegisterComponentWithWorld: Owner belongs to a DEADCLASS
+[2017.04.05-05.43.25:274][364]LogActorComponent: RegisterComponentWithWorld: Owner belongs to a DEADCLASS
+[2017.04.05-05.43.26:941][426]BlueprintLog: New page: PNPlayerCameraManager 컴파일
+[2017.04.05-05.43.26:948][426]LogUObjectHash:Warning: Ambiguous search, could be REINST_PNPlayerCameraManager_C_55 /Engine/Transient.World_12:PersistentLevel.PNPlayerCameraManager_C_0 or REINST_PNPlayerCameraManager_C_49 /Engine/Transient.World_12:PersistentLevel.PNPlayerCameraManager_C_0
+[2017.04.05-05.43.26:948][426]LogUObjectGlobals:Warning: Guid is in use by SceneComponent /Engine/Transient.World_12:PersistentLevel.PNPlayerCameraManager_C_0.TransformComponent0 and SceneComponent /Engine/Transient.World_12:PersistentLevel.PNPlayerCameraManager_C_1.TransformComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.05-05.43.26:948][426]LogWorld: --- Actors Currently in /Engine/Transient.World_12:PersistentLevel ---
+[2017.04.05-05.43.26:948][426]LogWorld:   /Engine/Transient.World_12:PersistentLevel.WorldSettings
+[2017.04.05-05.43.26:948][426]LogWorld:   /Engine/Transient.World_12:PersistentLevel.Brush_13
+[2017.04.05-05.43.26:948][426]LogWorld:   /Engine/Transient.World_12:PersistentLevel.DefaultPhysicsVolume_15
+[2017.04.05-05.43.26:948][426]LogWorld:   /Engine/Transient.World_12:PersistentLevel.ParticleEventManager_16
+[2017.04.05-05.43.26:948][426]LogWorld:   NONE
+[2017.04.05-05.43.26:948][426]LogWorld:   /Engine/Transient.World_12:PersistentLevel.CameraActor_12
+[2017.04.05-05.43.26:948][426]LogWorld:   NONE
+[2017.04.05-05.43.26:948][426]LogWorld:   /Engine/Transient.World_12:PersistentLevel.PNPlayerCameraManager_C_1
+[2017.04.05-05.43.27:578][426]LogOutputDevice:Warning: === Handled error: ===
+
+Ensure condition failed: false [File:D:\BuildFarm\buildmachine_++depot+UE4-Releases+4.10\Engine\Source\Runtime\Engine\Private\World.cpp] [Line: 1234]
+Could not remove actor /Engine/Transient.World_12:PersistentLevel.PNPlayerCameraManager_C_0 from world (check level is /Engine/Transient.World_12:PersistentLevel)
+Stack: 
+UE4Editor-Core.dll
+UE4Editor-Core.dll
+UE4Editor-Core.dll
+UE4Editor-Engine.dll
+UE4Editor-Engine.dll
+UE4Editor-Engine.dll
+UE4Editor-UnrealEd.dll
+UE4Editor-UnrealEd.dll
+UE4Editor-UnrealEd.dll
+UE4Editor-UnrealEd.dll
+UE4Editor-UnrealEd.dll
+UE4Editor-Kismet.dll
+UE4Editor-Kismet.dll
+UE4Editor-Kismet.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Slate.dll
+UE4Editor-Core.dll
+UE4Editor-Core.dll
+UE4Editor-Core.dll
+UE4Editor-Core.dll
+USER32.dll
+USER32.dll
+UE4Editor-Core.dll
+UE4Editor.exe
+UE4Editor.exe
+UE4Editor.exe
+UE4Editor.exe
+UE4Editor.exe
+kernel32.dll
+ntdll.dll
+ntdll.dll
+
+[2017.04.05-05.43.28:729][426]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_0) Not registered. Aborting.
+[2017.04.05-05.43.28:860][426]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003F761300
+[2017.04.05-05.43.28:862][426]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000004038180
+[2017.04.05-05.43.28:863][426]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001C26A840
+[2017.04.05-05.43.28:870][426]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001C1ECA40
+[2017.04.05-05.43.28:870][426]BlueprintEditorCompileResults: 정보 [0796.84] PNPlayerCameraManager 컴파일에 성공했습니다! [소요시간 1,929 ms]
+[2017.04.05-05.43.31:734][544]BlueprintLog: New page: 플레이 전 자동 컴파일
+[2017.04.05-05.43.31:735][544]LogPlayLevel: [PlayLevel] Compiling PNPlayerPawn before play...
+[2017.04.05-05.43.31:788][544]LogPlayLevel: PlayLevel: Blueprint regeneration took 54 ms (1 blueprints)
+[2017.04.05-05.43.31:811][544]PIE: New page: PIE 세션: Test_Player_Movement (2017. 4. 5. 오후 11:43:31)
+[2017.04.05-05.43.31:811][544]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
+[2017.04.05-05.43.31:815][544]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004557s)
+[2017.04.05-05.43.31:816][544]LogAIModule: Creating AISystem for world Test_Player_Movement
+[2017.04.05-05.43.31:816][544]LogPlayLevel: PIE: World Init took: (0.000607s)
+[2017.04.05-05.43.31:816][544]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.005329s)
+[2017.04.05-05.43.31:900][544]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-05.43.31:933][544]LogInit: FAudioDevice initialized.
+[2017.04.05-05.43.31:969][544]LogWorld: Game class is 'PNGameMode_C'
+[2017.04.05-05.43.31:974][544]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.04.05-14.43.31
+[2017.04.05-05.43.31:974][544]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.43.31:974][544]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.43.31:974][544]LogWorld: Bringing up level for play took: 0.004120
+[2017.04.05-05.43.31:978][544]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.521
+[2017.04.05-05.43.35:353][660]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001025F1A0
+[2017.04.05-05.43.36:988][714]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.43.38:031][714]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000037E41A80
+[2017.04.05-05.43.38:032][714]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003CA12AC0
+[2017.04.05-05.43.41:580][825]BlueprintLog: New page: PNPlayerController 컴파일
+[2017.04.05-05.43.41:618][825]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.43.41:648][825]BlueprintEditorCompileResults: 정보 [0809.62] PNPlayerController 컴파일에 성공했습니다! [소요시간 67 ms]
+[2017.04.05-05.44.02:007][114]BlueprintLog: New page: PNPlayerCameraManager 컴파일
+[2017.04.05-05.44.02:088][114]BlueprintEditorCompileResults: 정보 [0830.06] PNPlayerCameraManager 컴파일에 성공했습니다! [소요시간 81 ms]
+[2017.04.05-05.44.04:882][137]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.04.05-05.44.09:505][359]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PNPlayerController" FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerController.uasset" SILENT=true
+[2017.04.05-05.44.09:540][359]LogSavePackage: Save=11.918294ms
+[2017.04.05-05.44.09:540][359]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/PNPlayerController89DFC06C42BDA1980476139CDF28904D.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerController.uasset'
+[2017.04.05-05.44.09:554][359]LogSavePackage: Total save time: 37.788041ms
+[2017.04.05-05.44.09:554][359]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerController.uasset
+[2017.04.05-05.44.09:601][359]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PNPlayerPawn" FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerPawn.uasset" SILENT=true
+[2017.04.05-05.44.09:698][359]LogSavePackage: Save=77.885391ms
+[2017.04.05-05.44.09:698][359]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/PNPlayerPawn22E5C011462EB60D07A42684635E0028.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerPawn.uasset'
+[2017.04.05-05.44.09:710][359]LogSavePackage: Total save time: 103.327911ms
+[2017.04.05-05.44.09:711][359]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerPawn.uasset
+[2017.04.05-05.44.09:718][359]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PNPlayerCameraManager" FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerCameraManager.uasset" SILENT=true
+[2017.04.05-05.44.09:743][359]LogSavePackage: Save=18.587072ms
+[2017.04.05-05.44.09:743][359]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/PNPlayerCameraManager606090454B71780A008B699BB18BB461.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerCameraManager.uasset'
+[2017.04.05-05.44.09:755][359]LogSavePackage: Total save time: 31.510241ms
+[2017.04.05-05.44.09:755][359]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerCameraManager.uasset
+[2017.04.05-05.44.12:729][471]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.05-05.44.12:730][471]PIE: New page: PIE 세션: Test_Player_Movement (2017. 4. 5. 오후 11:44:12)
+[2017.04.05-05.44.12:730][471]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
+[2017.04.05-05.44.12:734][471]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003927s)
+[2017.04.05-05.44.12:734][471]LogAIModule: Creating AISystem for world Test_Player_Movement
+[2017.04.05-05.44.12:734][471]LogPlayLevel: PIE: World Init took: (0.000591s)
+[2017.04.05-05.44.12:734][471]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.004699s)
+[2017.04.05-05.44.12:734][471]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.44.12:818][471]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-05.44.12:843][471]LogInit: FAudioDevice initialized.
+[2017.04.05-05.44.12:879][471]LogWorld: Game class is 'PNGameMode_C'
+[2017.04.05-05.44.12:884][471]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.04.05-14.44.12
+[2017.04.05-05.44.12:884][471]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.44.12:884][471]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.44.12:884][471]LogWorld: Bringing up level for play took: 0.004558
+[2017.04.05-05.44.12:888][471]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: 0.388
+[2017.04.05-05.44.16:841][609]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000030E20F40
+[2017.04.05-05.45.30:173][359]LogEditorTransaction: Undo 컴포넌트 변경
+[2017.04.05-05.45.30:252][359]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-05.45.36:075][527]BlueprintLog: New page: 플레이 전 자동 컴파일
+[2017.04.05-05.45.36:076][527]LogPlayLevel: [PlayLevel] Compiling PNPlayerPawn before play...
+[2017.04.05-05.45.36:136][527]LogPlayLevel: PlayLevel: Blueprint regeneration took 60 ms (1 blueprints)
+[2017.04.05-05.45.36:136][527]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_1) Not registered. Aborting.
+[2017.04.05-05.45.36:174][527]PIE: New page: PIE 세션: Test_Player_Movement (2017. 4. 5. 오후 11:45:36)
+[2017.04.05-05.45.36:174][527]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
+[2017.04.05-05.45.36:180][527]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005199s)
+[2017.04.05-05.45.36:180][527]LogAIModule: Creating AISystem for world Test_Player_Movement
+[2017.04.05-05.45.36:180][527]LogPlayLevel: PIE: World Init took: (0.000709s)
+[2017.04.05-05.45.36:180][527]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.006078s)
+[2017.04.05-05.45.36:257][527]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-05.45.36:289][527]LogInit: FAudioDevice initialized.
+[2017.04.05-05.45.36:325][527]LogWorld: Game class is 'PNGameMode_C'
+[2017.04.05-05.45.36:330][527]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.04.05-14.45.36
+[2017.04.05-05.45.36:330][527]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.45.36:330][527]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-05.45.36:330][527]LogWorld: Bringing up level for play took: 0.004461
+[2017.04.05-05.45.36:334][527]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.167
+[2017.04.05-05.45.43:850][785]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002F91E200
+[2017.04.05-05.52.10:168][920]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Map/Test/Test_Player_Movement' took 0.023
+[2017.04.05-05.52.10:178][920]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/PNPlayerPawn] ([1] browsable assets)...
+[2017.04.05-05.52.10:195][920]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/PNPlayerPawn.PNPlayerPawn]
+[2017.04.05-05.52.10:195][920]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/PNPlayerPawn]
+[2017.04.05-05.52.10:195][920]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PNPlayerPawn" FILE="../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerPawn_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2017.04.05-05.52.10:290][920]LogSavePackage: Save=74.041344ms
+[2017.04.05-05.52.10:290][920]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/PNPlayerPawn_Auto2A952607341FB5A54E969E7B3D527EB6F.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerPawn_Auto2.uasset'
+[2017.04.05-05.52.10:295][920]LogSavePackage: Total save time: 92.164956ms
+[2017.04.05-05.52.10:295][920]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Blueprints/PNPlayerPawn_Auto2.uasset
+[2017.04.05-05.52.10:295][920]LogFileHelpers: Auto-saving content packages took 0.126
+[2017.04.05-06.09.27:571][185]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../Study/PaperNinja_Resource/Characters/Meshes/SK_Ninja.fbx)
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: NodeAttribute, ItemCount : 27
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: Model, ItemCount : 30
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: Geometry, ItemCount : 3
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: Material, ItemCount : 5
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: Texture, ItemCount : 5
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: AnimationCurveNode, ItemCount : 60
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: Pose, ItemCount : 3
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: Deformer, ItemCount : 48
+[2017.04.05-06.09.27:603][185]LogFbx: ItemName: Video, ItemCount : 5
+[2017.04.05-06.09.27:669][185]LogFbx: Loading FBX Scene from ../../../../../Study/PaperNinja_Resource/Characters/Meshes/SK_Ninja.fbx
+[2017.04.05-06.09.27:848][185]LogFbx: FBX Scene Loaded Succesfully
+[2017.04.05-06.10.12:956][185]LogFbx: Loading FBX Scene from ../../../../../Study/PaperNinja_Resource/Characters/Meshes/SK_Ninja.fbx
+[2017.04.05-06.10.13:133][185]LogFbx: FBX Scene Loaded Succesfully
+[2017.04.05-06.10.13:160][185]LogFbx: =================================================
+[2017.04.05-06.10.13:160][185]LogFbx: Dumping Node START [body1] 
+[2017.04.05-06.10.13:160][185]LogFbx: 	Total Deformer Count 794515280.
+[2017.04.05-06.10.13:160][185]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.05-06.10.13:160][185]LogFbx: =================================================
+[2017.04.05-06.10.13:160][185]LogFbx: 	Attribute () Type (4).
+[2017.04.05-06.10.13:160][185]LogFbx: 		[Node Attribute Child 1] body1 (Type Mesh).
+[2017.04.05-06.10.13:160][185]LogFbx: Dumping Node END [body1]
+[2017.04.05-06.10.13:160][185]LogFbx: =================================================
+[2017.04.05-06.10.13:160][185]LogFbx: Dumping Node START [weapon1] 
+[2017.04.05-06.10.13:160][185]LogFbx: 	Total Deformer Count 932727064.
+[2017.04.05-06.10.13:160][185]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.05-06.10.13:160][185]LogFbx: =================================================
+[2017.04.05-06.10.13:160][185]LogFbx: 	Attribute () Type (4).
+[2017.04.05-06.10.13:160][185]LogFbx: 		[Node Attribute Child 1] weapon1 (Type Mesh).
+[2017.04.05-06.10.13:160][185]LogFbx: Dumping Node END [weapon1]
+[2017.04.05-06.10.13:160][185]LogFbx: =================================================
+[2017.04.05-06.10.13:160][185]LogFbx: Dumping Node START [gamen1] 
+[2017.04.05-06.10.13:160][185]LogFbx: 	Total Deformer Count 932727064.
+[2017.04.05-06.10.13:160][185]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.05-06.10.13:160][185]LogFbx: =================================================
+[2017.04.05-06.10.13:160][185]LogFbx: 	Attribute () Type (4).
+[2017.04.05-06.10.13:160][185]LogFbx: 		[Node Attribute Child 1] gamen1 (Type Mesh).
+[2017.04.05-06.10.13:160][185]LogFbx: Dumping Node END [gamen1]
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node START [body1] 
+[2017.04.05-06.10.13:162][185]LogFbx: 	Total Deformer Count 794515088.
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: 	Attribute () Type (4).
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node Attribute Child 1] body1 (Type Mesh).
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node END [body1]
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node START [weapon1] 
+[2017.04.05-06.10.13:162][185]LogFbx: 	Total Deformer Count 932729864.
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: 	Attribute () Type (4).
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node Attribute Child 1] weapon1 (Type Mesh).
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node END [weapon1]
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node START [gamen1] 
+[2017.04.05-06.10.13:162][185]LogFbx: 	Total Deformer Count 932729864.
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: 	Attribute () Type (4).
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node Attribute Child 1] gamen1 (Type Mesh).
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node END [gamen1]
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node START [body1] 
+[2017.04.05-06.10.13:162][185]LogFbx: 	Total Deformer Count 794515280.
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: 	Attribute () Type (4).
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node Attribute Child 1] body1 (Type Mesh).
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node END [body1]
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node START [weapon1] 
+[2017.04.05-06.10.13:162][185]LogFbx: 	Total Deformer Count 932727792.
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: 	Attribute () Type (4).
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node Attribute Child 1] weapon1 (Type Mesh).
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node END [weapon1]
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node START [gamen1] 
+[2017.04.05-06.10.13:162][185]LogFbx: 	Total Deformer Count 932727792.
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.05-06.10.13:162][185]LogFbx: =================================================
+[2017.04.05-06.10.13:162][185]LogFbx: 	Attribute () Type (4).
+[2017.04.05-06.10.13:162][185]LogFbx: 		[Node Attribute Child 1] gamen1 (Type Mesh).
+[2017.04.05-06.10.13:162][185]LogFbx: Dumping Node END [gamen1]
+[2017.04.05-06.10.13:186][185]LogFbx: Valid bind pose for Pose (skinCluster5) - body1
+[2017.04.05-06.10.13:187][185]LogFbx: Valid bind pose for Pose (skinCluster6) - body1
+[2017.04.05-06.10.13:189][185]LogFbx: Valid bind pose for Pose (skinCluster7) - body1
+[2017.04.05-06.10.13:218][185]LogFbx:Warning: Bones digested - 26  Depth of hierarchy - 8
+[2017.04.05-06.10.13:232][185]LogSkeletalMesh: Chunk 0: 1234 rigid vertices, 170 soft vertices, 15 active bones
+[2017.04.05-06.10.13:232][185]LogSkeletalMesh: Chunk 1: 85 rigid vertices, 0 soft vertices, 3 active bones
+[2017.04.05-06.10.13:232][185]LogSkeletalMesh: Chunk 2: 163 rigid vertices, 103 soft vertices, 11 active bones
+[2017.04.05-06.10.13:232][185]LogSkeletalMesh: Chunk 3: 0 rigid vertices, 145 soft vertices, 2 active bones
+[2017.04.05-06.10.13:232][185]LogSkeletalMesh: Chunk 4: 35 rigid vertices, 0 soft vertices, 1 active bones
+[2017.04.05-06.10.13:233][185]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 1302 triangles
+[2017.04.05-06.10.13:234][185]LogSkeletalMesh: Section 1: Material=1, Chunk=1, 122 triangles
+[2017.04.05-06.10.13:234][185]LogSkeletalMesh: Section 2: Material=2, Chunk=2, 343 triangles
+[2017.04.05-06.10.13:234][185]LogSkeletalMesh: Section 3: Material=3, Chunk=3, 132 triangles
+[2017.04.05-06.10.13:234][185]LogSkeletalMesh: Section 4: Material=4, Chunk=4, 42 triangles
+[2017.04.05-06.10.13:237][185]LogLinker:Warning: '/Game/Characters/SK_Ninja_Skeleton' 파일을 찾을 수 없습니다.
+[2017.04.05-06.10.13:237][185]LogLinker:Warning: '/Game/Characters/SK_Ninja_Skeleton' 파일을 찾을 수 없습니다.
+[2017.04.05-06.10.13:237][185]LogUObjectGlobals:Warning: 'Object /Game/Characters/SK_Ninja_Skeleton.SK_Ninja_Skeleton' 오브젝트를 찾는 데 실패했습니다.
+[2017.04.05-06.10.31:468][810]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-06.10.31:493][810]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Map/Test/Test_Player_Movement' took 0.025
+[2017.04.05-06.10.31:502][810]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Characters/SK_Ninja] ([1] browsable assets)...
+[2017.04.05-06.10.31:520][810]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/Characters/SK_Ninja.SK_Ninja]
+[2017.04.05-06.10.31:520][810]OBJ SavePackage: Finished generating thumbnails for package [/Game/Characters/SK_Ninja]
+[2017.04.05-06.10.31:520][810]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/SK_Ninja" FILE="../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Characters/SK_Ninja_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.04.05-06.10.31:546][810]LogSavePackage: Save=19.485781ms
+[2017.04.05-06.10.31:546][810]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/SK_Ninja_Auto3013C88144A5C856DBD874A88D5857E7C.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Characters/SK_Ninja_Auto3.uasset'
+[2017.04.05-06.10.31:550][810]LogSavePackage: Total save time: 23.823757ms
+[2017.04.05-06.10.31:550][810]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Characters/SK_Ninja_Auto3.uasset
+[2017.04.05-06.10.31:561][810]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Characters/SK_Ninja_Skeleton] ([1] browsable assets)...
+[2017.04.05-06.10.31:561][810]OBJ SavePackage: Finished generating thumbnails for package [/Game/Characters/SK_Ninja_Skeleton]
+[2017.04.05-06.10.31:570][810]LogSavePackage: Save=3.627223ms
+[2017.04.05-06.10.31:570][810]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/SK_Ninja_Skeleton_Auto36C8E80934CF4D7F740F94C9517C70255.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Characters/SK_Ninja_Skeleton_Auto3.uasset'
+[2017.04.05-06.10.31:573][810]LogSavePackage: Total save time: 6.420527ms
+[2017.04.05-06.10.31:573][810]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Saved/Autosaves/Game/Characters/SK_Ninja_Skeleton_Auto3.uasset
+[2017.04.05-06.10.31:573][810]LogFileHelpers: Auto-saving content packages took 0.079
+[2017.04.05-06.11.53:923][502]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../Study/PaperNinja_Resource/Characters/Textures/T_Ninja_D.tga)
+[2017.04.05-06.11.53:975][502]LogTexture:Display: 텍스처 빌드중: T_Ninja_D (AutoDXT)
+[2017.04.05-06.12.29:581][876]LogMaterial: Missing cached shader map for material M_Ninja, compiling. 
+[2017.04.05-06.12.39:240][229]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/Materials/M_Ninja" FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Materials/M_Ninja.uasset" SILENT=true
+[2017.04.05-06.12.39:263][229]LogSavePackage: Save=16.031115ms
+[2017.04.05-06.12.39:263][229]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/M_Ninja58D07DD5466ECA2FA31D65B4328E73CD.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Materials/M_Ninja.uasset'
+[2017.04.05-06.12.39:277][229]LogSavePackage: Total save time: 29.881533ms
+[2017.04.05-06.12.39:277][229]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Materials/M_Ninja.uasset
+[2017.04.05-06.15.59:457][353]LogRenderer: Reallocating scene render targets to support 1576x1312 (Frame:124955).
+[2017.04.05-06.16.57:277][629]LogMaterial:Warning: Material /Game/Characters/Materials/M_Ninja.M_Ninja needed to have new flag set bUsedWithSkeletalMesh !
+[2017.04.05-06.16.57:280][629]LogMaterial: Missing cached shader map for material M_Ninja, compiling. 
+[2017.04.05-06.16.57:291][629]LogMaterial: 0.000164 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.05-06.17.16:581][ 53]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/SK_Ninja" FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/SK_Ninja.uasset" SILENT=true
+[2017.04.05-06.17.16:615][ 53]LogSavePackage: Save=20.288908ms
+[2017.04.05-06.17.16:615][ 53]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/SK_Ninja76F1AAA74643553969B30CB9E4EC4CBE.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/SK_Ninja.uasset'
+[2017.04.05-06.17.16:628][ 53]LogSavePackage: Total save time: 33.785231ms
+[2017.04.05-06.17.16:628][ 53]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/SK_Ninja.uasset
+[2017.04.05-06.17.56:427][ 47]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-06.18.52:462][141]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_2) Not registered. Aborting.
+[2017.04.05-06.18.54:581][192]BlueprintLog: New page: PNPlayerPawn 컴파일
+[2017.04.05-06.18.54:679][192]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_3) Not registered. Aborting.
+[2017.04.05-06.18.54:702][192]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002597CA40
+[2017.04.05-06.18.54:710][192]BlueprintEditorCompileResults: 정보 [2922.66] PNPlayerPawn 컴파일에 성공했습니다! [소요시간 129 ms]
+[2017.04.05-06.20.03:248][ 16]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-06.20.05:656][ 76]BlueprintLog: New page: PNPlayerPawn 컴파일
+[2017.04.05-06.20.05:753][ 76]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_4) Not registered. Aborting.
+[2017.04.05-06.20.05:782][ 76]BlueprintEditorCompileResults: 정보 [2993.73] PNPlayerPawn 컴파일에 성공했습니다! [소요시간 126 ms]
+[2017.04.05-06.20.10:205][202]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.05-06.20.10:205][202]PIE: New page: PIE 세션: Test_Player_Movement (2017. 4. 6. 오전 12:20:10)
+[2017.04.05-06.20.10:205][202]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
+[2017.04.05-06.20.10:211][202]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005722s)
+[2017.04.05-06.20.10:212][202]LogAIModule: Creating AISystem for world Test_Player_Movement
+[2017.04.05-06.20.10:212][202]LogPlayLevel: PIE: World Init took: (0.000696s)
+[2017.04.05-06.20.10:212][202]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.006579s)
+[2017.04.05-06.20.10:212][202]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-06.20.10:293][202]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-06.20.10:324][202]LogInit: FAudioDevice initialized.
+[2017.04.05-06.20.10:360][202]LogWorld: Game class is 'PNGameMode_C'
+[2017.04.05-06.20.10:365][202]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.04.05-15.20.10
+[2017.04.05-06.20.10:365][202]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-06.20.10:366][202]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-06.20.10:366][202]LogWorld: Bringing up level for play took: 0.004989
+[2017.04.05-06.20.10:369][202]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: -0.153
+[2017.04.05-06.20.17:594][417]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000060DF1B20
+[2017.04.05-06.20.28:132][716]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2017.04.05-06.21.13:167][948]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PNPlayerPawn" FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerPawn.uasset" SILENT=true
+[2017.04.05-06.21.13:277][948]LogSavePackage: Save=77.532898ms
+[2017.04.05-06.21.13:277][948]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/PNPlayerPawnC2E775044CA1651F882B609A51492430.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerPawn.uasset'
+[2017.04.05-06.21.13:290][948]LogSavePackage: Total save time: 109.643556ms
+[2017.04.05-06.21.13:290][948]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Content/Blueprints/PNPlayerPawn.uasset
+[2017.04.05-06.21.13:298][948]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/SK_Ninja_Skeleton" FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/SK_Ninja_Skeleton.uasset" SILENT=true
+[2017.04.05-06.21.13:310][948]LogSavePackage: Save=3.540624ms
+[2017.04.05-06.21.13:310][948]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/SK_Ninja_SkeletonA2788142453A32A98FA4A0A272DA6DB3.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/SK_Ninja_Skeleton.uasset'
+[2017.04.05-06.21.13:322][948]LogSavePackage: Total save time: 17.085060ms
+[2017.04.05-06.21.13:322][948]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/SK_Ninja_Skeleton.uasset
+[2017.04.05-06.21.13:360][948]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/Textures/T_Ninja_D" FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Textures/T_Ninja_D.uasset" SILENT=true
+[2017.04.05-06.21.13:421][948]LogSavePackage: Save=54.735821ms
+[2017.04.05-06.21.13:421][948]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/T_Ninja_D5B11257F4585077A1068CC97FE41F924.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Textures/T_Ninja_D.uasset'
+[2017.04.05-06.21.13:432][948]LogSavePackage: Total save time: 66.351019ms
+[2017.04.05-06.21.13:432][948]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Textures/T_Ninja_D.uasset
+[2017.04.05-06.21.13:438][948]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/Textures/M_Ninja" FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Textures/M_Ninja.uasset" SILENT=true
+[2017.04.05-06.21.13:447][948]LogSavePackage: Save=2.337537ms
+[2017.04.05-06.21.13:447][948]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/M_Ninja4AFC16A04B2826C262D6CBB33C54A409.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Textures/M_Ninja.uasset'
+[2017.04.05-06.21.13:459][948]LogSavePackage: Total save time: 14.569834ms
+[2017.04.05-06.21.13:459][948]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Textures/M_Ninja.uasset
+[2017.04.05-06.21.13:466][948]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Characters/Materials/M_Ninja" FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Materials/M_Ninja.uasset" SILENT=true
+[2017.04.05-06.21.13:489][948]LogSavePackage: Save=3.547680ms
+[2017.04.05-06.21.13:489][948]LogSavePackage: Moving '../../../../../Study/unreal4104.study/PaperNinja/Saved/M_Ninja89F7D233437183FE9731B2A810E82987.tmp' to '../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Materials/M_Ninja.uasset'
+[2017.04.05-06.21.13:501][948]LogSavePackage: Total save time: 28.768253ms
+[2017.04.05-06.21.13:501][948]LogSavePackage:Display: Finished SavePackage ../../../../../Study/unreal4104.study/PaperNinja/Content/Characters/Materials/M_Ninja.uasset
+[2017.04.05-06.21.27:123][254]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.05-06.21.27:124][254]PIE: New page: PIE 세션: Test_Player_Movement (2017. 4. 6. 오전 12:21:27)
+[2017.04.05-06.21.27:124][254]LogPlayLevel: Creating play world package: /Game/Map/Test/UEDPIE_0_Test_Player_Movement
+[2017.04.05-06.21.27:130][254]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005847s)
+[2017.04.05-06.21.27:130][254]LogAIModule: Creating AISystem for world Test_Player_Movement
+[2017.04.05-06.21.27:130][254]LogPlayLevel: PIE: World Init took: (0.000608s)
+[2017.04.05-06.21.27:130][254]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Test/Test_Player_Movement.Test_Player_Movement to /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement (0.006711s)
+[2017.04.05-06.21.27:130][254]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-06.21.27:220][254]LogInit: XAudio2 using '스피커(Display Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.05-06.21.27:253][254]LogInit: FAudioDevice initialized.
+[2017.04.05-06.21.27:285][254]LogWorld: Game class is 'PNGameMode_C'
+[2017.04.05-06.21.27:291][254]LogWorld: Bringing World /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement up for play (max tick rate 0) at 2017.04.05-15.21.27
+[2017.04.05-06.21.27:291][254]LogActor:Warning: GameSession /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameSession_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-06.21.27:291][254]LogActor:Warning: GameNetworkManager /Game/Map/Test/UEDPIE_0_Test_Player_Movement.Test_Player_Movement:PersistentLevel.GameNetworkManager_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.05-06.21.27:292][254]LogWorld: Bringing up level for play took: 0.004799
+[2017.04.05-06.21.27:295][254]PIE: 정보 /Game/Map/Test/UEDPIE_0_Test_Player_Movement 에 대한 에디터에서 플레이 시작 시간: 0.773
+[2017.04.05-06.21.31:731][349]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003D6C7CE0
+[2017.04.05-06.23.32:209][597]LogAIModule: Creating AISystem for world PNStage01_Top
+[2017.04.05-06.23.32:240][597]Cmd: MAP LOAD FILE="../../../../../Study/unreal4104.study/PaperNinja/Content/Map/PNStage01_Top.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.05-06.23.32:240][597]LightingResults: New page: 라이팅 빌드
+[2017.04.05-06.23.32:300][597]LoadErrors: New page: 맵 로드중: PNStage01_Top.umap
+[2017.04.05-06.23.32:304][597]MapCheck: New page: 맵 체크
+[2017.04.05-06.23.32:304][597]LightingResults: New page: 라이팅 빌드
+[2017.04.05-06.23.32:325][597]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004471B100
+[2017.04.05-06.23.32:325][597]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000010F07380
+[2017.04.05-06.23.32:327][597]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001C1EE340
+[2017.04.05-06.23.32:328][597]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000035102FC0
+[2017.04.05-06.23.32:949][597]LogMaterial: Missing cached shader map for material M_Floor, compiling. 
+[2017.04.05-06.23.32:955][597]LogMaterial: Missing cached shader map for material M_FloorSide, compiling. 
+[2017.04.05-06.23.32:964][597]LogMaterial: Missing cached shader map for material M_Pillar, compiling. 
+[2017.04.05-06.23.32:974][597]LogMaterial: Missing cached shader map for material M_Wall, compiling. 
+[2017.04.05-06.23.32:993][597]LogMaterial: Missing cached shader map for material M_Bonfire, compiling. 
+[2017.04.05-06.23.33:025][597]LogMaterial:Warning: Material /Game/Architecture/Materials/M_FloorSide.M_FloorSide needed to have new flag set bUsedWithStaticLighting !
+[2017.04.05-06.23.33:034][597]LogMaterial: Missing cached shader map for material M_FloorSide, compiling. 
+[2017.04.05-06.23.33:040][597]MapCheck:Warning: 경고 M_FloorSide /Game/Architecture/Materials/M_FloorSide.M_FloorSide 머티리얼이 bUsedWithStaticLighting 사용 플래그에 빠져있었습니다. 머티리얼 애셋이 재저장되지 않은 경우, 에디터 밖에서 실행시 제대로 렌더링되지 않을 수 있습니다. 픽스
+[2017.04.05-06.23.33:116][597]LogMaterial: 0.000088 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.05-06.23.33:116][597]LogMaterial:Warning: Material /Game/Architecture/Materials/M_Floor.M_Floor needed to have new flag set bUsedWithStaticLighting !
+[2017.04.05-06.23.33:119][597]LogMaterial: Missing cached shader map for material M_Floor, compiling. 
+[2017.04.05-06.23.33:124][597]MapCheck:Warning: 경고 M_Floor /Game/Architecture/Materials/M_Floor.M_Floor 머티리얼이 bUsedWithStaticLighting 사용 플래그에 빠져있었습니다. 머티리얼 애셋이 재저장되지 않은 경우, 에디터 밖에서 실행시 제대로 렌더링되지 않을 수 있습니다. 픽스
+[2017.04.05-06.23.33:125][597]LogMaterial: 0.000079 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.05-06.23.33:161][597]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.05-06.23.33:190][597]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.05-06.23.33:418][597]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 2 회, 소요 시간 228.267ms.
+[2017.04.05-06.23.33:438][597]LogFileHelpers: Loading map 'PNStage01_Top' took 1.200
+[2017.04.05-06.23.51:327][ 38]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2017.04.05-06.23.53:165][ 81]Cmd: QUIT_EDITOR
+[2017.04.05-06.23.53:386][ 81]LogExit: Preparing to exit.
+[2017.04.05-06.23.54:409][ 81]LogExit: Editor shut down
+[2017.04.05-06.23.54:409][ 81]LogExit: Transaction tracking system shut down
+[2017.04.05-06.23.54:410][ 81]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000010F074C0
+[2017.04.05-06.23.54:411][ 81]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000110C3880
+[2017.04.05-06.23.54:411][ 81]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000010F079C0
+[2017.04.05-06.23.54:416][ 81]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002F3A5580
+[2017.04.05-06.23.54:416][ 81]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004037C900
+[2017.04.05-06.23.54:417][ 81]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000324FADE0
+[2017.04.05-06.23.54:418][ 81]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003233BE20
+[2017.04.05-06.23.54:418][ 81]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000324F96C0
+[2017.04.05-06.23.54:625][ 81]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000031D25800
+[2017.04.05-06.23.54:625][ 81]LogExit: Object subsystem successfully closed.
+[2017.04.05-06.23.54:646][ 81]LogD3D11RHI: Shutdown
+[2017.04.05-06.23.54:646][ 81]LogD3D11RHI: CleanupD3DDevice
+[2017.04.05-06.23.54:757][ 81]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.04.05-06.23.54:834][ 81]LogModuleManager: Shutting down and abandoning module CookingStats (200)
+[2017.04.05-06.23.54:834][ 81]LogModuleManager: Shutting down and abandoning module BlueprintGraph (199)
+[2017.04.05-06.23.54:834][ 81]LogModuleManager: Shutting down and abandoning module CrashTracker (198)
+[2017.04.05-06.23.54:834][ 81]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
+[2017.04.05-06.23.54:834][ 81]LogModuleManager: Shutting down and abandoning module SuperSearch (196)
+[2017.04.05-06.23.54:834][ 81]LogModuleManager: Shutting down and abandoning module WidgetCarousel (195)
+[2017.04.05-06.23.54:834][ 81]LogModuleManager: Shutting down and abandoning module AddContentDialog (194)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module EditorWidgets (193)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module CollectionManager (192)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module BspMode (185)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
+[2017.04.05-06.23.54:835][ 81]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
+[2017.04.05-06.23.54:836][ 81]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
+[2017.04.05-06.23.54:836][ 81]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
+[2017.04.05-06.23.54:836][ 81]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module MergeActors (169)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module SizeMap (168)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module TreeMap (167)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module XmlParser (158)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module Blutility (157)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module AutomationController (146)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
+[2017.04.05-06.23.54:838][ 81]LogModuleManager: Shutting down and abandoning module Layers (144)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module Persona (140)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module Kismet (139)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module Toolbox (136)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module OutputLog (133)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module GammaUI (132)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module Documentation (131)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module Analytics (127)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module AIModule (124)
+[2017.04.05-06.23.54:839][ 81]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
+[2017.04.05-06.23.54:990][ 81]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
+[2017.04.05-06.23.54:990][ 81]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
+[2017.04.05-06.23.54:990][ 81]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
+[2017.04.05-06.23.54:990][ 81]LogModuleManager: Shutting down and abandoning module SteamVR (119)
+[2017.04.05-06.23.54:990][ 81]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
+[2017.04.05-06.23.54:990][ 81]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
+[2017.04.05-06.23.54:990][ 81]LogModuleManager: Shutting down and abandoning module OculusInput (116)
+[2017.04.05-06.23.54:990][ 81]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
+[2017.04.05-06.23.55:002][ 81]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
+[2017.04.05-06.23.55:002][ 81]LogModuleManager: Shutting down and abandoning module CableComponent (113)
+[2017.04.05-06.23.55:002][ 81]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
+[2017.04.05-06.23.55:002][ 81]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
+[2017.04.05-06.23.55:002][ 81]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
+[2017.04.05-06.23.55:002][ 81]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
+[2017.04.05-06.23.55:002][ 81]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
+[2017.04.05-06.23.55:002][ 81]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
+[2017.04.05-06.23.55:002][ 81]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module SourceControl (100)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module HotReload (93)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module MainFrame (92)
+[2017.04.05-06.23.55:003][ 81]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
+[2017.04.05-06.23.55:004][ 81]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
+[2017.04.05-06.23.55:004][ 81]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
+[2017.04.05-06.23.55:120][ 81]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
+[2017.04.05-06.23.55:120][ 81]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
+[2017.04.05-06.23.55:120][ 81]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
+[2017.04.05-06.23.55:220][ 81]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
+[2017.04.05-06.23.55:220][ 81]LogModuleManager: Shutting down and abandoning module Paper2D (84)
+[2017.04.05-06.23.55:220][ 81]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
+[2017.04.05-06.23.55:223][ 81]LogModuleManager: Shutting down and abandoning module Media (82)
+[2017.04.05-06.23.55:223][ 81]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module MessageLog (73)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module Sequencer (72)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module AssetTools (71)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module UMG (69)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module Slate (68)
+[2017.04.05-06.23.55:224][ 81]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
+[2017.04.05-06.23.55:226][ 81]LogModuleManager: Shutting down and abandoning module SessionServices (66)
+[2017.04.05-06.23.55:226][ 81]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
+[2017.04.05-06.23.55:226][ 81]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
+[2017.04.05-06.23.55:226][ 81]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
+[2017.04.05-06.23.55:226][ 81]LogModuleManager: Shutting down and abandoning module Networking (61)
+[2017.04.05-06.23.55:226][ 81]LogModuleManager: Shutting down and abandoning module Core (60)
+[2017.04.05-06.23.55:226][ 81]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
+[2017.04.05-06.23.55:226][ 81]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
+[2017.04.05-06.23.55:226][ 81]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
+[2017.04.05-06.23.55:226][ 81]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
+[2017.04.05-06.23.55:238][ 81]LogDerivedDataCache: Shutdown
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (36)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (35)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (34)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (33)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (32)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (31)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (30)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (29)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2017.04.05-06.23.55:238][ 81]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2017.04.05-06.23.57:239][ 81]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2017.04.05-06.23.57:239][ 81]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2017.04.05-06.23.57:239][ 81]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2017.04.05-06.23.57:239][ 81]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.04.05-06.23.57:239][ 81]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.04.05-06.23.57:239][ 81]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.04.05-06.23.57:239][ 81]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.04.05-06.23.57:240][ 81]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.04.05-06.23.57:240][ 81]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.04.05-06.23.57:240][ 81]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.04.05-06.23.57:240][ 81]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.04.05-06.23.57:240][ 81]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.04.05-06.23.57:240][ 81]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.04.05-06.23.57:240][ 81]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.04.05-06.23.57:240][ 81]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.04.05-06.23.57:240][ 81]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.04.05-06.23.57:240][ 81]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.04.05-06.23.57:242][ 81]LogExit: Exiting.
+[2017.04.05-06.23.57:260][ 81]Log file closed, 04/05/17 15:23:57

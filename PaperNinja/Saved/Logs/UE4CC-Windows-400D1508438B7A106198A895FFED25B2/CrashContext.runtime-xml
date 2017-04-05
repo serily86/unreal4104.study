@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+<RuntimeProperties>
+<Version>1</Version>
+<ProcessId>4132</ProcessId>
+<IsInternalBuild>0</IsInternalBuild>
+<IsPerforceBuild>0</IsPerforceBuild>
+<IsSourceDistribution>0</IsSourceDistribution>
+<GameName>PaperNinja</GameName>
+<ExecutableName>UE4Editor</ExecutableName>
+<BuildConfiguration>Development</BuildConfiguration>
+<PlatformName>Windows</PlatformName>
+<PlatformNameIni>Windows</PlatformNameIni>
+<EngineMode>Editor</EngineMode>
+<EngineVersion>4.10.4-2872498+++depot+UE4-Releases+4.10</EngineVersion>
+<CommandLine>-EpicPortal </CommandLine>
+<LanguageLCID>1042</LanguageLCID>
+<DefaultLocale>ko_KR</DefaultLocale>
+<IsUE4Release>1</IsUE4Release>
+<UserName></UserName>
+<BaseDir>F:/Program Files (x86)/UE_4.10/Engine/Binaries/Win64/</BaseDir>
+<RootDir>F:/Program Files (x86)/UE_4.10/</RootDir>
+<MachineId>A4F805FC4F2F3C71DFCB7B8FE1938769</MachineId>
+<EpicAccountId>7260c19b5aeb45edafca6b45e10b0fc9</EpicAccountId>
+<CallStack></CallStack>
+<SourceContext></SourceContext>
+<UserDescription></UserDescription>
+<ErrorMessage>Ensure condition failed: false [File:D:\BuildFarm\buildmachine_++depot+UE4-Releases+4.10\Engine\Source\Runtime\Engine\Private\World.cpp] [Line: 1234] 
+Could not remove actor /Engine/Transient.World_12:PersistentLevel.PNPlayerCameraManager_C_0 from world (check level is /Engine/Transient.World_12:PersistentLevel)
+</ErrorMessage>
+<MiscNumberOfCores>4</MiscNumberOfCores>
+<MiscNumberOfCoresIncludingHyperthreads>4</MiscNumberOfCoresIncludingHyperthreads>
+<MiscIs64bitOperatingSystem>1</MiscIs64bitOperatingSystem>
+<MiscCPUVendor>GenuineIntel</MiscCPUVendor>
+<MiscCPUBrand>Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz</MiscCPUBrand>
+<MiscPrimaryGPUBrand>NVIDIA GeForce GT 755M</MiscPrimaryGPUBrand>
+<MiscOSVersionMajor>Windows 7</MiscOSVersionMajor>
+<MiscOSVersionMinor>Service Pack 1</MiscOSVersionMinor>
+<CrashDumpMode>0</CrashDumpMode>
+<MemoryStatsTotalPhysical>34297360384</MemoryStatsTotalPhysical>
+<MemoryStatsTotalVirtual>8796092891136</MemoryStatsTotalVirtual>
+<MemoryStatsPageSize>4096</MemoryStatsPageSize>
+<MemoryStatsTotalPhysicalGB>32</MemoryStatsTotalPhysicalGB>
+<MemoryStatsAvailablePhysical>28712374272</MemoryStatsAvailablePhysical>
+<MemoryStatsAvailableVirtual>8794433978368</MemoryStatsAvailableVirtual>
+<MemoryStatsUsedPhysical>1083523072</MemoryStatsUsedPhysical>
+<MemoryStatsPeakUsedPhysical>1090088960</MemoryStatsPeakUsedPhysical>
+<MemoryStatsUsedVirtual>995037184</MemoryStatsUsedVirtual>
+<MemoryStatsPeakUsedVirtual>1002602496</MemoryStatsPeakUsedVirtual>
+<MemoryStatsbIsOOM>0</MemoryStatsbIsOOM>
+<MemoryStatsOOMAllocationSize>0</MemoryStatsOOMAllocationSize>
+<MemoryStatsOOMAllocationAlignment>0</MemoryStatsOOMAllocationAlignment>
+</RuntimeProperties>
+<PlatformProperties>
+<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+</PlatformProperties>
+</FGenericCrashContext>
